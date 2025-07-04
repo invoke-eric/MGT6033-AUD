@@ -1,0 +1,95 @@
+{
+  "title": "Answer Key",
+  "sections": [
+    {
+      "title": "Section 1: Document-Term Matrix (DTM) Fundamentals",
+      "questions": [
+        {
+          "number": 1,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answer:** B",
+          "options": {}
+        },
+        {
+          "number": 2,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answers:** A, B, C",
+          "options": {}
+        },
+        {
+          "number": 3,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answer:** C",
+          "options": {}
+        },
+        {
+          "number": 4,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answers:** A, B",
+          "options": {}
+        }
+      ]
+    },
+    {
+      "title": "Section 2: Vocabulary, Sparsity, and Efficiency",
+      "questions": [
+        {
+          "number": 5,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answer:** A",
+          "options": {}
+        },
+        {
+          "number": 6,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answers:** A, B",
+          "options": {}
+        }
+      ]
+    },
+    {
+      "title": "Section 3: Sentiment Analysis Approaches and Challenges",
+      "questions": [
+        {
+          "number": 7,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answer:** B",
+          "options": {}
+        },
+        {
+          "number": 8,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answers:** A, B, C",
+          "options": {}
+        },
+        {
+          "number": 9,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answers:** A, B, D",
+          "options": {}
+        }
+      ]
+    },
+    {
+      "title": "Section 4: Beyond Basic Sentiment – Other Language Attributes",
+      "questions": [
+        {
+          "number": 10,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answers:** A, B, C, D",
+          "options": {}
+        }
+      ]
+    }
+  ]
+}

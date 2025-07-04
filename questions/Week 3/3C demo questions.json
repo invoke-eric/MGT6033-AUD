@@ -1,0 +1,140 @@
+{
+  "title": "Quiz Questions",
+  "sections": [
+    {
+      "title": "Section 1: Loading and Inspecting News Data",
+      "questions": [
+        {
+          "number": 1,
+          "difficulty": "Easy",
+          "type": "single_select",
+          "question": "What Python library is used to load the news articles CSV file in the demo?",
+          "options": {
+            "A": "collections",
+            "B": "pandas",
+            "C": "spaCy",
+            "D": "sklearn"
+          }
+        },
+        {
+          "number": 2,
+          "difficulty": "Medium",
+          "type": "single_select",
+          "question": "What is the purpose of calling `news.head()` after loading the CSV?",
+          "options": {
+            "A": "title",
+            "B": "author",
+            "C": "date",
+            "D": "review"
+          }
+        },
+        {
+          "number": 4,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "What does `news['title']` return?",
+          "options": {
+            "A": "A list of all article authors",
+            "B": "The DataFrame’s index",
+            "C": "A pandas Series containing all article titles",
+            "D": "The full text of each article"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Section 2: Named Entity Recognition with spaCy",
+      "questions": [
+        {
+          "number": 5,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "Why is it important to inspect the data types of columns in the DataFrame before processing?",
+          "options": {
+            "A": "To ensure compatibility with NLP tools",
+            "B": "To filter out stop words",
+            "C": "To automatically lemmatize text",
+            "D": "To convert all numbers to strings"
+          }
+        },
+        {
+          "number": 6,
+          "difficulty": "Easy",
+          "type": "single_select",
+          "question": "What does NER stand for?",
+          "options": {
+            "A": "Load the spaCy language model",
+            "B": "Pass the text through the model",
+            "C": "Convert the DataFrame to a NumPy array",
+            "D": "Tokenize with `split()`"
+          }
+        },
+        {
+          "number": 8,
+          "difficulty": "Medium",
+          "type": "single_select",
+          "question": "What type of object is returned when you process a string with a spaCy model (e.g., `nlp(title)`)?",
+          "options": {
+            "A": ".ents",
+            "B": ".lemma_",
+            "C": ".text",
+            "D": ".label_"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Section 3: Interpreting and Using NER Output",
+      "questions": [
+        {
+          "number": 10,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "What is the output of iterating over `doc.ents` for a processed title?",
+          "options": {
+            "A": "Each token in the sentence",
+            "B": "Each named entity and its label (e.g., \"Barack Obama\" – PERSON)",
+            "C": "Each word’s lemma",
+            "D": "The number of sentences"
+          }
+        },
+        {
+          "number": 11,
+          "difficulty": "Easy",
+          "type": "single_select",
+          "question": "What does the NER label \"ORG\" typically represent?",
+          "options": {
+            "A": "PERSON",
+            "B": "GPE",
+            "C": "PRODUCT",
+            "D": "COLOR"
+          }
+        },
+        {
+          "number": 13,
+          "difficulty": "Medium",
+          "type": "single_select",
+          "question": "If a title contains \"Apple launches new iPhone,\" which entities and labels would spaCy most likely assign?",
+          "options": {
+            "A": "\"Apple\" – ORG, \"iPhone\" – PRODUCT",
+            "B": "\"Apple\" – PERSON, \"iPhone\" – GPE",
+            "C": "\"Apple\" - ORG, \"iPhone\" – GPE",
+            "D": "\"Apple\" – PRODUCT, \"iPhone\" – PRODUCT"
+          }
+        },
+        {
+          "number": 14,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "Why might different spaCy models yield different NER results on the same text?",
+          "options": {
+            "A": "Identifying trends in organizations or people mentioned",
+            "B": "Filtering articles by location or product",
+            "C": "Automatically generating article summaries",
+            "D": "Counting the frequency of entity types"
+          }
+        }
+      ]
+    }
+  ]
+}

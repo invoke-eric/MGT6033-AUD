@@ -1,0 +1,64 @@
+{
+  "title": "Answer Key",
+  "sections": [
+    {
+      "title": "Section 1: What is NLP?",
+      "questions": [
+        {
+          "number": 1,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answer:** B",
+          "options": {}
+        },
+        {
+          "number": 2,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answers:** A, C, D",
+          "options": {}
+        },
+        {
+          "number": 3,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answer:** B",
+          "options": {}
+        },
+        {
+          "number": 4,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answers:** A, C, D",
+          "options": {}
+        }
+      ]
+    },
+    {
+      "title": "Section 2: Characteristics of Natural Language",
+      "questions": [
+        {
+          "number": 5,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answer:** B",
+          "options": {}
+        },
+        {
+          "number": 6,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answers:** A, C",
+          "options": {}
+        },
+        {
+          "number": 7,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answer:** B",
+          "options": {}
+        }
+      ]
+    }
+  ]
+}

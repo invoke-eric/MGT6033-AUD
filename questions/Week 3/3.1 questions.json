@@ -1,0 +1,263 @@
+{
+  "title": "Quiz Questions",
+  "sections": [
+    {
+      "title": "Section 1: What is NLP?",
+      "questions": [
+        {
+          "number": 1,
+          "difficulty": "Easy",
+          "type": "single_select",
+          "question": "What is the primary purpose of Natural Language Processing (NLP)?",
+          "options": {
+            "A": "Generating artificial languages",
+            "B": "Programmatically understanding and quantifying information in natural language",
+            "C": "Developing computer programming languages",
+            "D": "Translating mathematical formulas"
+          }
+        },
+        {
+          "number": 2,
+          "difficulty": "Medium",
+          "type": "multiple_select",
+          "question": "Which of the following are considered examples of unstructured data?",
+          "options": {
+            "A": "Audio files",
+            "B": "Financial spreadsheets",
+            "C": "Written texts such as documents or transcripts",
+            "D": "Web pages"
+          }
+        },
+        {
+          "number": 3,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "NLP originally emerged to address which primary challenge, according to the lecture?",
+          "options": {
+            "A": "Automatic speech synthesis",
+            "B": "Automated translation after World War II",
+            "C": "Generating new programming languages",
+            "D": "Real-time video analysis"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Section 2: Characteristics of Natural Language",
+      "questions": [
+        {
+          "number": 4,
+          "difficulty": "Medium",
+          "type": "multiple_select",
+          "question": "Which are applications of NLP mentioned in the materials?",
+          "options": {
+            "A": "Sentiment analysis",
+            "B": "Image classification",
+            "C": "Topic classification",
+            "D": "Detecting latent features"
+          }
+        },
+        {
+          "number": 5,
+          "difficulty": "Easy",
+          "type": "single_select",
+          "question": "Natural language, as defined in the module, is primarily:",
+          "options": {
+            "A": "Developed for computer instructions",
+            "B": "Developed naturally for human communication",
+            "C": "Created for mathematical reasoning",
+            "D": "Exclusive to written documents"
+          }
+        },
+        {
+          "number": 6,
+          "difficulty": "Medium",
+          "type": "multiple_select",
+          "question": "Which of the following are NOT natural languages?",
+          "options": {
+            "A": "Python",
+            "B": "English",
+            "C": "Math (as a symbolic language)",
+            "D": "Spanish"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Section 3: Key Steps of the NLP Process",
+      "questions": [
+        {
+          "number": 7,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "Why is it important to understand the differences between natural languages and computer languages for NLP?",
+          "options": {
+            "A": "Because computer languages have fewer grammar rules",
+            "B": "Because NLP tools are designed for languages meant to convey information between humans",
+            "C": "Because both use the same vocabulary",
+            "D": "Because natural languages are always written, while computer languages are spoken"
+          }
+        },
+        {
+          "number": 8,
+          "difficulty": "Medium",
+          "type": "single_select",
+          "question": "According to the lecture, what are the core steps in an NLP workflow?",
+          "options": {
+            "A": "Preprocessing, Model Training, Measurement & Extraction",
+            "B": "Data Mining, Sorting, Visualizing",
+            "C": "Tokenization, Lemmatization, Parsing",
+            "D": "Data Entry, Data Cleaning, Model Deployment"
+          }
+        },
+        {
+          "number": 9,
+          "difficulty": "Hard",
+          "type": "multiple_select",
+          "question": "Which of the following statements about pre-processing in NLP are correct?",
+          "options": {
+            "A": "Pre-processing quality affects the overall quality of NLP analysis",
+            "B": "Pre-processing is only necessary for audio data",
+            "C": "Pre-processing can be easy or cumbersome, depending on the data",
+            "D": "Pre-processing is unnecessary for structured tabular data"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Section 4: Key Concepts & Definitions",
+      "questions": [
+        {
+          "number": 10,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "Measurement and extraction in NLP can best be described as:",
+          "options": {
+            "A": "Data in a strict table format",
+            "B": "Data not ready for direct analysis, such as text, audio, or video",
+            "C": "Data with numerical values only",
+            "D": "Data exclusively from emails"
+          }
+        },
+        {
+          "number": 12,
+          "difficulty": "Medium",
+          "type": "multiple_select",
+          "question": "According to the lecture, which of the following are key terms/concepts to remember in NLP?",
+          "options": {
+            "A": "Preprocessing",
+            "B": "Model training",
+            "C": "Measurement & extraction",
+            "D": "Data encryption"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Section 5: Applications and Historical Notes",
+      "questions": [
+        {
+          "number": 13,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "Which of the following best distinguishes \"latent features\" as used in NLP applications?",
+          "options": {
+            "A": "Obvious characteristics of text such as word count",
+            "B": "Hidden or underlying properties not explicitly visible in text",
+            "C": "Features only found in audio data",
+            "D": "Manual tags appended to documents"
+          }
+        },
+        {
+          "number": 14,
+          "difficulty": "Medium",
+          "type": "single_select",
+          "question": "Which of the following is NOT mentioned as an application of NLP in the lecture?",
+          "options": {
+            "A": "Sentiment measurement",
+            "B": "Topic classification",
+            "C": "Similarity measurement",
+            "D": "Video frame segmentation"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Section 6: Miscellaneous",
+      "questions": [
+        {
+          "number": 15,
+          "difficulty": "Hard",
+          "type": "multiple_select",
+          "question": "Why did the need for NLP arise after WWII?",
+          "options": {
+            "A": "The volume of intercepted documents exceeded the capacity for manual translation",
+            "B": "Real-time translation was required for diplomatic purposes",
+            "C": "Computers were first becoming available for such tasks",
+            "D": "Manual translation was too slow to keep up with intelligence demands"
+          }
+        },
+        {
+          "number": 16,
+          "difficulty": "Medium",
+          "type": "single_select",
+          "question": "According to the transcript, which of the following best describes a \"black box\" in NLP?",
+          "options": {
+            "A": "A pre-trained classifier or model whose internal workings are not necessarily understood",
+            "B": "A graphical user interface for annotation",
+            "C": "A manual translation table",
+            "D": "A type of encryption method"
+          }
+        },
+        {
+          "number": 17,
+          "difficulty": "Hard",
+          "type": "multiple_select",
+          "question": "Based on the lecture, why is preprocessing especially important in NLP?",
+          "options": {
+            "A": "Poor preprocessing may lead to inaccurate analysis",
+            "B": "High-quality preprocessing can be time-consuming for complex data types",
+            "C": "Preprocessing is only needed for simple text documents",
+            "D": "Preprocessing can involve cleaning HTML tags and handling embedded media"
+          }
+        },
+        {
+          "number": 18,
+          "difficulty": "Medium",
+          "type": "single_select",
+          "question": "\"Spoken word\" is included as a type of unstructured data because:",
+          "options": {
+            "A": "It is always accompanied by video",
+            "B": "It is a form of natural language that can be analyzed programmatically",
+            "C": "It is always structured in tables",
+            "D": "It is only used in corporate environments"
+          }
+        },
+        {
+          "number": 19,
+          "difficulty": "Hard",
+          "type": "multiple_select",
+          "question": "In what ways can NLP be used to process conference call data, according to the transcript?",
+          "options": {
+            "A": "Mapping transcript text to audio timing",
+            "B": "Extracting sentiment from spoken language",
+            "C": "Generating new voices from written script",
+            "D": "Measuring when certain topics are discussed"
+          }
+        },
+        {
+          "number": 20,
+          "difficulty": "Easy",
+          "type": "single_select",
+          "question": "In summary, what does NLP refer to?",
+          "options": {
+            "A": "Mathematical analysis of data tables",
+            "B": "Techniques for programmatically processing natural language",
+            "C": "Creating encryption keys",
+            "D": "Managing databases"
+          }
+        }
+      ]
+    }
+  ]
+}

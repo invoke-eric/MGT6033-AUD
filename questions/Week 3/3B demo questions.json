@@ -1,0 +1,169 @@
+{
+  "title": "Quiz Questions",
+  "sections": [
+    {
+      "title": "Section 1: Loading, Preparing, and Representing a Corpus",
+      "questions": [
+        {
+          "number": 1,
+          "difficulty": "Easy",
+          "type": "single_select",
+          "question": "What is the primary purpose of using scikit-learn's `CountVectorizer` in this module?",
+          "options": {
+            "A": "Lemmatization",
+            "B": "Removing stop words",
+            "C": "Minimum document frequency filtering",
+            "D": "Custom tokenization"
+          }
+        },
+        {
+          "number": 3,
+          "difficulty": "Medium",
+          "type": "single_select",
+          "question": "What is the default output format of `CountVectorizer`?",
+          "options": {
+            "A": "They save memory",
+            "B": "They allow faster access to rows and columns",
+            "C": "Most matrix values are zero",
+            "D": "They can store more diverse data types than dense matrices"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Section 2: Building the DTM: Hard Way vs Easy Way",
+      "questions": [
+        {
+          "number": 5,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "What does the method `get_feature_names_out()` return after fitting a `CountVectorizer`?",
+          "options": {
+            "A": "Remove non-alphabetic tokens",
+            "B": "Remove stop words",
+            "C": "Convert tokens to lowercase",
+            "D": "Lemmatize tokens"
+          }
+        },
+        {
+          "number": 7,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "In the \"easy way\" with `CountVectorizer`, what do the `min_df` and `max_df` parameters control?",
+          "options": {
+            "A": "The minimum/maximum allowed frequency for words to be included as columns",
+            "B": "The number of rows in the DTM",
+            "C": "The minimum/maximum number of tokens per sentence",
+            "D": "The maximum allowed length of reviews"
+          }
+        },
+        {
+          "number": 8,
+          "difficulty": "Medium",
+          "type": "single_select",
+          "question": "What is the “bag of words” representation?",
+          "options": {
+            "A": "A model that uses sentence structure and grammar",
+            "B": "Counting each unique word in a document while ignoring order",
+            "C": "Counting only verbs in each document",
+            "D": "A matrix of word embeddings"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Section 3: Dictionary-Based Sentiment Analysis",
+      "questions": [
+        {
+          "number": 9,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "Why does the number of columns in the DTM decrease when you increase `min_df`?",
+          "options": {
+            "A": "Lemmatization",
+            "B": "Removal of short tokens",
+            "C": "Elimination of numbers",
+            "D": "Handling of rare words (below min_df)"
+          }
+        },
+        {
+          "number": 11,
+          "difficulty": "Easy",
+          "type": "single_select",
+          "question": "What is the main idea behind using a sentiment dictionary for analysis?",
+          "options": {
+            "A": "Read the Excel file with `read_excel`",
+            "B": "Filter rows for positive/negative categories",
+            "C": "Split on hashes and convert tokens to lowercase",
+            "D": "Convert imported columns to string type"
+          }
+        },
+        {
+          "number": 14,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "Why do some words in the sentiment dictionary appear as `\"ACCORD#2\"` or similar variants?",
+          "options": {
+            "A": "They are synonyms from different languages",
+            "B": "They represent the same root word in multiple categories or meanings",
+            "C": "They are always stop words",
+            "D": "They are specific to Amazon reviews"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Section 4: Pattern-Based & TextBlob Sentiment Analysis",
+      "questions": [
+        {
+          "number": 15,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "What is the recommended measure for calculating review \"tone\" in the document-term matrix?",
+          "options": {
+            "A": "They account for contextual modifiers like \"not\"",
+            "B": "They require passage-level input",
+            "C": "They measure polarity and subjectivity",
+            "D": "They only support dictionary matches"
+          }
+        },
+        {
+          "number": 17,
+          "difficulty": "Medium",
+          "type": "single_select",
+          "question": "How does the \"subjectivity\" score from TextBlob differ from the \"polarity\" score?",
+          "options": {
+            "A": "Subjectivity measures opinion/fact, polarity measures positive/negative",
+            "B": "Subjectivity is always 1",
+            "C": "Polarity is always negative",
+            "D": "They are computed the same way"
+          }
+        },
+        {
+          "number": 18,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "How does the subjectivity-weighted polarity adjust the sentiment score from TextBlob?",
+          "options": {
+            "A": "Polarity is multiplied by (1 - subjectivity) to down-weight highly subjective passages",
+            "B": "Subjectivity is ignored for all calculations",
+            "C": "The result is always 0 or 1",
+            "D": "Only negative polarity is weighted"
+          }
+        },
+        {
+          "number": 19,
+          "difficulty": "Medium",
+          "type": "single_select",
+          "question": "Why did Robbie convert the tuple output from a custom TextBlob function to columns in the DataFrame?",
+          "options": {
+            "A": "Always check your data with `.head()` for a visual check",
+            "B": "Investigate the actual review text for extreme values",
+            "C": "Merge indices to make results interpretable",
+            "D": "Ignore any NaN or missing results"
+          }
+        }
+      ]
+    }
+  ]
+}

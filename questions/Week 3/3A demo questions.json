@@ -1,0 +1,114 @@
+{
+  "title": "Quiz Questions",
+  "sections": [
+    {
+      "title": "Section 1: Loading and Tokenizing Text",
+      "questions": [
+        {
+          "number": 1,
+          "difficulty": "Easy",
+          "type": "single_select",
+          "question": "Which Python method is commonly used to split a string into tokens based on whitespace?",
+          "options": {
+            "A": "Handles punctuation more accurately than basic split",
+            "B": "Returns a list of tokens",
+            "C": "Must always be used on lowercase strings",
+            "D": "Converts numeric values to words by default"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Section 2: Stemming vs. Lemmatization",
+      "questions": [
+        {
+          "number": 3,
+          "difficulty": "Medium",
+          "type": "single_select",
+          "question": "What is the main reason to filter out stop words when analyzing tokenized text?",
+          "options": {
+            "A": "Tokenization",
+            "B": "Lemmatization or stemming",
+            "C": "Removing stop words",
+            "D": "Sorting tokens alphabetically"
+          }
+        },
+        {
+          "number": 5,
+          "difficulty": "Medium",
+          "type": "single_select",
+          "question": "What attribute of a spaCy token object returns the lemma (root form) of a word?",
+          "options": {
+            "A": ".stem_",
+            "B": ".lemma_",
+            "C": ".root_",
+            "D": ".text_"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Section 3: Sentence and Token Filtering",
+      "questions": [
+        {
+          "number": 6,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "Why might the lemma of a word appear identical to its original text in a preprocessed file?",
+          "options": {
+            "A": "Such sentences are often headings or non-informative",
+            "B": "They improve overall sentence readability",
+            "C": "To minimize inclusion of noise like titles or blank lines",
+            "D": "To guarantee that only questions are analyzed"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Section 4: Advanced Cleaning and Inspection",
+      "questions": [
+        {
+          "number": 9,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "In spaCy, which attributes can be used to filter out punctuation and ensure only clean words are collected?",
+          "options": {
+            "A": "Convert non-acronym words to lowercase",
+            "B": "Keep acronyms (e.g., NLP) in uppercase",
+            "C": "Use Pandas Series to count word frequency",
+            "D": "Discard proper nouns entirely"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Section 5: Case Sensitivity and Acronym Preservation",
+      "questions": [
+        {
+          "number": 11,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "What is a practical pandas method to examine the most frequent non-stop words in a processed corpus?",
+          "options": {
+            "A": "Skip sentences that are too short",
+            "B": "Filter out non-alphabetic tokens",
+            "C": "Remove stop words",
+            "D": "Store all tokens as title-case"
+          }
+        },
+        {
+          "number": 13,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "In the acronym-preserving version of the cleaning loop, what check ensures a token is an acronym?",
+          "options": {
+            "A": "Acronyms may be undercounted",
+            "B": "Frequencies for \"NLP\" and \"nlp\" could be split",
+            "C": "Case-sensitive duplicates may appear in results",
+            "D": "Lemmatization will always fail"
+          }
+        }
+      ]
+    }
+  ]
+}

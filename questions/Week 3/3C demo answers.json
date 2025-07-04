@@ -1,0 +1,125 @@
+{
+  "title": "Answer Key",
+  "sections": [
+    {
+      "title": "Section 1: Loading and Inspecting News Data",
+      "questions": [
+        {
+          "number": 1,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answer:** B",
+          "options": {}
+        },
+        {
+          "number": 2,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answer:** B",
+          "options": {}
+        },
+        {
+          "number": 3,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answers:** A, B, C",
+          "options": {}
+        },
+        {
+          "number": 4,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answer:** C",
+          "options": {}
+        },
+        {
+          "number": 5,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answer:** A",
+          "options": {}
+        }
+      ]
+    },
+    {
+      "title": "Section 2: Named Entity Recognition with spaCy",
+      "questions": [
+        {
+          "number": 6,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answer:** B",
+          "options": {}
+        },
+        {
+          "number": 7,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answers:** A, B",
+          "options": {}
+        },
+        {
+          "number": 8,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answer:** B",
+          "options": {}
+        },
+        {
+          "number": 9,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answers:** A, D",
+          "options": {}
+        },
+        {
+          "number": 10,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answer:** B",
+          "options": {}
+        }
+      ]
+    },
+    {
+      "title": "Section 3: Interpreting and Using NER Output",
+      "questions": [
+        {
+          "number": 11,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answer:** B",
+          "options": {}
+        },
+        {
+          "number": 12,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answers:** A, B, C",
+          "options": {}
+        },
+        {
+          "number": 13,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answer:** A",
+          "options": {}
+        },
+        {
+          "number": 14,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answer:** A",
+          "options": {}
+        },
+        {
+          "number": 15,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answers:** A, B, D",
+          "options": {}
+        }
+      ]
+    }
+  ]
+}

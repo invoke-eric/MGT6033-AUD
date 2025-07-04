@@ -1,0 +1,73 @@
+{
+  "title": "Quiz Questions",
+  "sections": [
+    {
+      "title": "Section 1: Document-Term Matrix (DTM) Fundamentals",
+      "questions": [
+        {
+          "number": 1,
+          "difficulty": "Easy",
+          "type": "single_select",
+          "question": "What is a document-term matrix (DTM) in NLP?",
+          "options": {
+            "A": "Word counts",
+            "B": "TF-IDF",
+            "C": "Word vectors",
+            "D": "Frequency ranks"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Section 2: Vocabulary, Sparsity, and Efficiency",
+      "questions": [
+        {
+          "number": 3,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "What is typically the most common value in a sparse document-term matrix?",
+          "options": {
+            "A": "Document length",
+            "B": "Most popular words in the corpus",
+            "C": "Unique vocabulary size",
+            "D": "Document similarity"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Section 3: Sentiment Analysis Approaches and Challenges",
+      "questions": [
+        {
+          "number": 5,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "Why is vocabulary selection important when constructing a DTM?",
+          "options": {
+            "A": "They require less memory to store",
+            "B": "They enable efficient computation",
+            "C": "They allow for faster tokenization",
+            "D": "They are easier to interpret visually"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Section 4: Beyond Basic Sentiment – Other Language Attributes",
+      "questions": [
+        {
+          "number": 7,
+          "difficulty": "Easy",
+          "type": "single_select",
+          "question": "What does sentiment analysis primarily attempt to measure in text?",
+          "options": {
+            "A": "Uncertainty",
+            "B": "Toxicity",
+            "C": "Financial sentiment",
+            "D": "Topic identification"
+          }
+        }
+      ]
+    }
+  ]
+}

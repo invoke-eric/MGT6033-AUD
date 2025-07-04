@@ -1,0 +1,92 @@
+{
+  "title": "Quiz Questions",
+  "sections": [
+    {
+      "title": "Section 1: Distance and Similarity in Numeric and Text Data",
+      "questions": [
+        {
+          "number": 1,
+          "difficulty": "Easy",
+          "type": "single_select",
+          "question": "What is the primary goal of comparing documents in a corpus?",
+          "options": {
+            "A": "Euclidean distance",
+            "B": "Mahalanobis distance",
+            "C": "Levenshtein distance",
+            "D": "Jaccard distance"
+          }
+        },
+        {
+          "number": 3,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "When visualizing two customers using complaints (X) and unique products (Y), what does Euclidean distance represent?",
+          "options": {
+            "A": "The sum of X and Y",
+            "B": "The number of shared complaints",
+            "C": "The straight-line (hypotenuse) distance between two points",
+            "D": "The cosine between their vectors"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Section 2: Vector Space Models and Document-Term Matrix",
+      "questions": [
+        {
+          "number": 4,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "What does cosine similarity ignore that Euclidean distance emphasizes?",
+          "options": {
+            "A": "It gives a value between -1 and 1, but usually 0 to 1 in text analysis",
+            "B": "A value close to 1 means high similarity",
+            "C": "It is computationally efficient",
+            "D": "It is strongly affected by the scale of the data"
+          }
+        },
+        {
+          "number": 6,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "In textual data analysis, what is the typical “space” in which similarity is quantified?",
+          "options": {
+            "A": "CSV tables",
+            "B": "2-dimensional plots",
+            "C": "k-dimensional vector space using a document-term matrix",
+            "D": "Single-word comparisons"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Section 3: Matrix Algebra and Corpus-Wide Comparison",
+      "questions": [
+        {
+          "number": 7,
+          "difficulty": "Medium",
+          "type": "single_select",
+          "question": "Which of the following statements best describes the effect of document length on cosine similarity?",
+          "options": {
+            "A": "Levenshtein (edit) distance",
+            "B": "Jaccard distance",
+            "C": "Manhattan distance",
+            "D": "Bieber distance"
+          }
+        },
+        {
+          "number": 9,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "When computing the cosine similarity matrix for all documents, what does the diagonal of the resulting matrix represent?",
+          "options": {
+            "A": "Efficient computation with linear algebra",
+            "B": "Robust to differences in document length",
+            "C": "Highlights only identical documents",
+            "D": "Usable for large corpora"
+          }
+        }
+      ]
+    }
+  ]
+}

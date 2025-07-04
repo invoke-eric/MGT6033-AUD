@@ -1,0 +1,87 @@
+{
+  "title": "Quiz Questions",
+  "sections": [
+    {
+      "title": "Section 1: NLP Terminology & Foundations",
+      "questions": [
+        {
+          "number": 1,
+          "difficulty": "Easy",
+          "type": "single_select",
+          "question": "What is the definition of a \"token\" in NLP?",
+          "options": {
+            "A": "Characters",
+            "B": "Words",
+            "C": "Sentences",
+            "D": "Paragraphs"
+          }
+        },
+        {
+          "number": 3,
+          "difficulty": "Medium",
+          "type": "single_select",
+          "question": "What is an \"N-gram\"?",
+          "options": {
+            "A": "Sentences",
+            "B": "Words",
+            "C": "Characters",
+            "D": "Pages"
+          }
+        },
+        {
+          "number": 5,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "What distinguishes a lemma from a stem in NLP?",
+          "options": {
+            "A": "Lemmas always coincide with valid dictionary words; stems may not",
+            "B": "Stems are always longer than lemmas",
+            "C": "Stems are determined by part-of-speech; lemmas aren’t",
+            "D": "Stems do not require rules; lemmas do"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Section 2: Tokenization Techniques & Challenges",
+      "questions": [
+        {
+          "number": 6,
+          "difficulty": "Medium",
+          "type": "single_select",
+          "question": "What is a stop word?",
+          "options": {
+            "A": "The",
+            "B": "Is",
+            "C": "Very",
+            "D": "Table"
+          }
+        },
+        {
+          "number": 8,
+          "difficulty": "Medium",
+          "type": "single_select",
+          "question": "In the provided example (“Let’s tokenize! Isn’t this easy?”), what is a potential issue with simple whitespace tokenization?",
+          "options": {
+            "A": "It can handle contractions like “isn’t” by splitting into “is” and “n’t”",
+            "B": "It allows separation of ending punctuation from words",
+            "C": "It is perfect for all text types",
+            "D": "It standardizes tokens better across contexts"
+          }
+        },
+        {
+          "number": 10,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "What is a known limitation of tokenizing possessives and contractions (such as \"'s\")?",
+          "options": {
+            "A": "They always indicate possession",
+            "B": "They can represent different meanings such as “is”, “us”, or ownership, causing ambiguity",
+            "C": "They are never separated from root words",
+            "D": "Only stemmers can handle them correctly"
+          }
+        }
+      ]
+    }
+  ]
+}

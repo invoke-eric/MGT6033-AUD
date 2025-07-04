@@ -1,0 +1,80 @@
+{
+  "title": "Quiz Questions",
+  "sections": [
+    {
+      "title": "Section 1: Named Entity Recognition (NER) Concepts",
+      "questions": [
+        {
+          "number": 1,
+          "difficulty": "Easy",
+          "type": "single_select",
+          "question": "What is the primary purpose of Named Entity Recognition (NER) in NLP?",
+          "options": {
+            "A": "Customer support ticket routing",
+            "B": "Resume review in HR",
+            "C": "Assigning IT help desk requests",
+            "D": "Submitting a vacation request"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Section 2: NER Methods and Process",
+      "questions": [
+        {
+          "number": 3,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "In the context of NER, what is a \"named entity\"?",
+          "options": {
+            "A": "Lexicon-based approach",
+            "B": "Rule-based approach",
+            "C": "Machine-learning based approach",
+            "D": "Random word sampling approach"
+          }
+        },
+        {
+          "number": 7,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "Which statement best describes a lexicon-based approach to NER?",
+          "options": {
+            "A": "It uses a pre-prepared dictionary for matching entity names",
+            "B": "It learns entity categories from labeled data",
+            "C": "It generates artificial entities for testing",
+            "D": "It always outperforms machine learning approaches"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Section 3: NER Limitations and Best Practices",
+      "questions": [
+        {
+          "number": 8,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "Which approach is most suitable for identifying entities that follow well-defined textual patterns (e.g., capitalized cities or company names)?",
+          "options": {
+            "A": "Poor performance on entities not in the dictionary",
+            "B": "Difficulty handling new or misspelled names",
+            "C": "Inability to identify entities with multiple meanings (ambiguity)",
+            "D": "Always requires a large, labeled training dataset in addition to the lexicon"
+          }
+        },
+        {
+          "number": 10,
+          "difficulty": "Medium",
+          "type": "single_select",
+          "question": "According to the lecture, what is a common trait of state-of-the-art NER models today?",
+          "options": {
+            "A": "They are entirely rule-based",
+            "B": "They routinely achieve over 90% accuracy",
+            "C": "They require no labeled data",
+            "D": "They ignore entities related to products"
+          }
+        }
+      ]
+    }
+  ]
+}
