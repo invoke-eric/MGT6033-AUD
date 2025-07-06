@@ -59,9 +59,15 @@ def main():
     logger.info(f"questions loaded, {len(questions)} is size, {questions[0]} is first element")
     logger.info(f"answers loaded, {len(correct_answers.items())} is size")
 
+    # Filter out questions that do not have corresponding answers
+    initial_question_count = len(questions)
+    questions = [q for q in questions if q["number"] in correct_answers]
+    if len(questions) < initial_question_count:
+        dropped_count = initial_question_count - len(questions)
+        logger.info(f"Dropped {dropped_count} questions due to missing answers.")
 
     if not questions:
-        st.warning("No questions found in the JSON file.")
+        st.warning("No questions found in the JSON file or no answers for existing questions.")
         return
 
     # Display all questions
@@ -75,7 +81,12 @@ def main():
         current_question_choices = []
         for opt_idx, opt in enumerate(q["options"]):
             checkbox_key = f"q{q['number']}_opt{opt_idx}"
-            is_checked = st.checkbox(opt, key=checkbox_key, disabled=st.session_state.quiz_submitted)
+            is_checked = st.checkbox(
+                opt,
+                key=checkbox_key,
+                value=(opt[0].lower() in st.session_state.get(f'q{q["number"]}_selected_options', [])),
+                disabled=st.session_state.quiz_submitted
+            )
             
             if is_checked:
                 current_question_choices.append(opt[0].lower())
