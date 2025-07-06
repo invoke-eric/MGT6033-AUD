@@ -10,22 +10,41 @@
           "type": "single_select",
           "question": "What is a document-term matrix (DTM) in NLP?",
           "options": {
+            "A": "A table where each cell stores the definition of a word",
+            "B": "A vector-space representation of a corpus of text",
+            "C": "A list of grammar rules for natural language",
+            "D": "A series of translations between languages"
+          }
+        },
+        {
+          "number": 2,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Medium) ** Which of the following are possible representations of values in a DTM?",
+          "options": {
             "A": "Word counts",
             "B": "TF-IDF",
             "C": "Word vectors",
             "D": "Frequency ranks"
           }
-        }
-      ]
-    },
-    {
-      "title": "Section 2: Vocabulary, Sparsity, and Efficiency",
-      "questions": [
+        },
         {
           "number": 3,
           "difficulty": "Hard",
           "type": "single_select",
           "question": "What is typically the most common value in a sparse document-term matrix?",
+          "options": {
+            "A": "One",
+            "B": "The mean value",
+            "C": "Zero",
+            "D": "The highest word count"
+          }
+        },
+        {
+          "number": 4,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Medium) ** What information can you directly obtain from a DTM by summing rows or columns?",
           "options": {
             "A": "Document length",
             "B": "Most popular words in the corpus",
@@ -36,13 +55,25 @@
       ]
     },
     {
-      "title": "Section 3: Sentiment Analysis Approaches and Challenges",
+      "title": "Section 2: Vocabulary, Sparsity, and Efficiency",
       "questions": [
         {
           "number": 5,
           "difficulty": "Hard",
           "type": "single_select",
           "question": "Why is vocabulary selection important when constructing a DTM?",
+          "options": {
+            "A": "It determines which words become columns in the matrix",
+            "B": "It prevents the DTM from being dense and computationally inefficient",
+            "C": "It ensures rare and common words are treated the same",
+            "D": "It improves the accuracy of word vectors"
+          }
+        },
+        {
+          "number": 6,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Hard) ** What are advantages of sparse matrices in the context of DTMs?",
           "options": {
             "A": "They require less memory to store",
             "B": "They enable efficient computation",
@@ -53,13 +84,54 @@
       ]
     },
     {
-      "title": "Section 4: Beyond Basic Sentiment – Other Language Attributes",
+      "title": "Section 3: Sentiment Analysis Approaches and Challenges",
       "questions": [
         {
           "number": 7,
           "difficulty": "Easy",
           "type": "single_select",
           "question": "What does sentiment analysis primarily attempt to measure in text?",
+          "options": {
+            "A": "Linguistic complexity",
+            "B": "Tone or polarity (positive/negative)",
+            "C": "Grammatical correctness",
+            "D": "Average document length"
+          }
+        },
+        {
+          "number": 8,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Medium) ** Which of the following are broad classes of sentiment analysis approaches?",
+          "options": {
+            "A": "Dictionary-based",
+            "B": "Pattern-based",
+            "C": "Machine learning-based",
+            "D": "Neural translation-based"
+          }
+        },
+        {
+          "number": 9,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Hard) ** What are challenges of dictionary-based sentiment analysis?",
+          "options": {
+            "A": "Failure to account for negation (e.g., \"not good\")",
+            "B": "Difficulty interpreting context or modifiers",
+            "C": "Inability to process large corpora",
+            "D": "Dependence on the quality of the underlying dictionary"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Section 4: Beyond Basic Sentiment – Other Language Attributes",
+      "questions": [
+        {
+          "number": 10,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Hard) ** Which of the following can be measured by adapting sentiment analysis methods, according to the lecture?",
           "options": {
             "A": "Uncertainty",
             "B": "Toxicity",

@@ -39,12 +39,7 @@
             "C": "Generating new programming languages",
             "D": "Real-time video analysis"
           }
-        }
-      ]
-    },
-    {
-      "title": "Section 2: Characteristics of Natural Language",
-      "questions": [
+        },
         {
           "number": 4,
           "difficulty": "Medium",
@@ -56,7 +51,12 @@
             "C": "Topic classification",
             "D": "Detecting latent features"
           }
-        },
+        }
+      ]
+    },
+    {
+      "title": "Section 2: Characteristics of Natural Language",
+      "questions": [
         {
           "number": 5,
           "difficulty": "Easy",
@@ -80,12 +80,7 @@
             "C": "Math (as a symbolic language)",
             "D": "Spanish"
           }
-        }
-      ]
-    },
-    {
-      "title": "Section 3: Key Steps of the NLP Process",
-      "questions": [
+        },
         {
           "number": 7,
           "difficulty": "Hard",
@@ -97,7 +92,12 @@
             "C": "Because both use the same vocabulary",
             "D": "Because natural languages are always written, while computer languages are spoken"
           }
-        },
+        }
+      ]
+    },
+    {
+      "title": "Section 3: Key Steps of the NLP Process",
+      "questions": [
         {
           "number": 8,
           "difficulty": "Medium",
@@ -121,6 +121,18 @@
             "C": "Pre-processing can be easy or cumbersome, depending on the data",
             "D": "Pre-processing is unnecessary for structured tabular data"
           }
+        },
+        {
+          "number": 10,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "Measurement and extraction in NLP can best be described as:",
+          "options": {
+            "A": "Running functions on text to return numeric measures",
+            "B": "Annotating text manually",
+            "C": "Collecting raw, unprocessed data",
+            "D": "Encrypting data for privacy"
+          }
         }
       ]
     },
@@ -128,10 +140,10 @@
       "title": "Section 4: Key Concepts & Definitions",
       "questions": [
         {
-          "number": 10,
-          "difficulty": "Hard",
+          "number": 11,
+          "difficulty": "Easy",
           "type": "single_select",
-          "question": "Measurement and extraction in NLP can best be described as:",
+          "question": "In the context of NLP, unstructured data refers to:",
           "options": {
             "A": "Data in a strict table format",
             "B": "Data not ready for direct analysis, such as text, audio, or video",
@@ -150,12 +162,7 @@
             "C": "Measurement & extraction",
             "D": "Data encryption"
           }
-        }
-      ]
-    },
-    {
-      "title": "Section 5: Applications and Historical Notes",
-      "questions": [
+        },
         {
           "number": 13,
           "difficulty": "Hard",
@@ -167,7 +174,12 @@
             "C": "Features only found in audio data",
             "D": "Manual tags appended to documents"
           }
-        },
+        }
+      ]
+    },
+    {
+      "title": "Section 5: Applications and Historical Notes",
+      "questions": [
         {
           "number": 14,
           "difficulty": "Medium",
@@ -179,12 +191,7 @@
             "C": "Similarity measurement",
             "D": "Video frame segmentation"
           }
-        }
-      ]
-    },
-    {
-      "title": "Section 6: Miscellaneous",
-      "questions": [
+        },
         {
           "number": 15,
           "difficulty": "Hard",
@@ -196,7 +203,12 @@
             "C": "Computers were first becoming available for such tasks",
             "D": "Manual translation was too slow to keep up with intelligence demands"
           }
-        },
+        }
+      ]
+    },
+    {
+      "title": "Section 6: Miscellaneous",
+      "questions": [
         {
           "number": 16,
           "difficulty": "Medium",

@@ -10,6 +10,18 @@
           "type": "single_select",
           "question": "What is the definition of a \"token\" in NLP?",
           "options": {
+            "A": "Any numeric value in a dataset",
+            "B": "A smaller piece of text produced by breaking down a document",
+            "C": "The last word in a document",
+            "D": "A specific stop word"
+          }
+        },
+        {
+          "number": 2,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Medium) ** Which of the following are examples of tokens as described in the lecture?",
+          "options": {
             "A": "Characters",
             "B": "Words",
             "C": "Sentences",
@@ -21,6 +33,18 @@
           "difficulty": "Medium",
           "type": "single_select",
           "question": "What is an \"N-gram\"?",
+          "options": {
+            "A": "A punctuation mark in a sentence",
+            "B": "A combination of 'n' consecutive words or tokens",
+            "C": "Another word for a lemma",
+            "D": "A part-of-speech tag"
+          }
+        },
+        {
+          "number": 4,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Medium) ** According to the materials, what are the most common levels at which text is tokenized?",
           "options": {
             "A": "Sentences",
             "B": "Words",
@@ -39,6 +63,30 @@
             "C": "Stems are determined by part-of-speech; lemmas aren’t",
             "D": "Stems do not require rules; lemmas do"
           }
+        },
+        {
+          "number": 6,
+          "difficulty": "Medium",
+          "type": "single_select",
+          "question": "What is a stop word?",
+          "options": {
+            "A": "A word that always signals the end of a sentence",
+            "B": "A frequently occurring, mostly semantically low-value word",
+            "C": "A unique noun in a document",
+            "D": "Any verb in the passive voice"
+          }
+        },
+        {
+          "number": 7,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Hard) ** Which words would most likely be included in a stop word dictionary?",
+          "options": {
+            "A": "The",
+            "B": "Is",
+            "C": "Very",
+            "D": "Table"
+          }
         }
       ]
     },
@@ -46,22 +94,22 @@
       "title": "Section 2: Tokenization Techniques & Challenges",
       "questions": [
         {
-          "number": 6,
-          "difficulty": "Medium",
-          "type": "single_select",
-          "question": "What is a stop word?",
-          "options": {
-            "A": "The",
-            "B": "Is",
-            "C": "Very",
-            "D": "Table"
-          }
-        },
-        {
           "number": 8,
           "difficulty": "Medium",
           "type": "single_select",
           "question": "In the provided example (“Let’s tokenize! Isn’t this easy?”), what is a potential issue with simple whitespace tokenization?",
+          "options": {
+            "A": "It separates contractions into separate words",
+            "B": "Punctuation remains attached to words, affecting consistency",
+            "C": "It changes all words to lowercase",
+            "D": "It counts stop words twice"
+          }
+        },
+        {
+          "number": 9,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Hard) ** What are advantages of rules-based tokenization, according to the lecture?",
           "options": {
             "A": "It can handle contractions like “isn’t” by splitting into “is” and “n’t”",
             "B": "It allows separation of ending punctuation from words",

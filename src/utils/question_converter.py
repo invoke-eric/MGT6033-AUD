@@ -26,87 +26,118 @@ def parse_quiz_md(content: str) -> Dict[str, Any]:
         if not line:
             i += 1
             continue
-            
-        # Parse main title
-        if line.startswith('# '):
-            result["title"] = line.replace('# ', '').strip()
-            i += 1
-            continue
-            
-        # Parse section headers
-        if line.startswith('## '):
-            if current_section:
-                result["sections"].append(current_section)
-            
-            current_section = {
-                "title": line.replace('## ', '').strip(),
-                "questions": []
-            }
-            i += 1
-            continue
-            
-        # Parse question numbers with difficulty and type
-        question_match = re.match(r'^(\d+)\.\s*\*\*\(([^)]+)\)\*\*\s*(.*)', line)
-        if question_match:
-            if current_question:
-                current_section["questions"].append(current_question)
-            
-            question_number = int(question_match.group(1))
-            difficulty = question_match.group(2)
-            question_text = question_match.group(3).strip()
-            
-            # Determine question type based on text content
-            is_multiple_select = "Select all that apply:" in question_text
-            if is_multiple_select:
-                question_text = question_text.replace("Select all that apply:", "").strip()
-            
-            current_question = {
-                "number": question_number,
-                "difficulty": difficulty,
-                "type": "multiple_select" if is_multiple_select else "single_select",
-                "question": question_text,
-                "options": {}
-            }
-            i += 1
-            continue
         
-        # Parse question without difficulty marker (fallback)
-        simple_question_match = re.match(r'^(\d+)\.\s*(.*)', line)
-        if simple_question_match and not current_question:
-            if current_question:
-                current_section["questions"].append(current_question)
+        try:
+            # Parse main title
+            if line.startswith('# ') or line.startswith('**# '):
+                title = line.replace('**# ', '').replace('# ', '').replace('**', '').strip()
+                result["title"] = title
+                i += 1
+                continue
+                
+            # Parse section headers
+            if line.startswith('## ') or line.startswith('**## '):
+                # Save previous section if exists
+                if current_section:
+                    if current_question:
+                        current_section["questions"].append(current_question)
+                        current_question = None
+                    result["sections"].append(current_section)
+                
+                section_title = line.replace('**## ', '').replace('## ', '').replace('**', '').strip()
+                current_section = {
+                    "title": section_title,
+                    "questions": []
+                }
+                i += 1
+                continue
             
-            question_number = int(simple_question_match.group(1))
-            question_text = simple_question_match.group(2).strip()
+            # Parse question numbers with difficulty and type
+            question_match = re.match(r'^(\d+)\.\s*\*\*\(([^)]+)\)\*\*\s*(.*)', line)
+            if question_match:
+                if current_question and current_section:
+                    current_section["questions"].append(current_question)
+                
+                question_number = int(question_match.group(1))
+                difficulty_and_type = question_match.group(2)
+                question_text = question_match.group(3).strip()
+                
+                # Check if "Select all that apply" is in the difficulty marker
+                is_multiple_select = False
+                difficulty = difficulty_and_type
+                
+                if "Select all that apply" in difficulty_and_type:
+                    is_multiple_select = True
+                    # Remove "Select all that apply:" from difficulty
+                    difficulty = re.sub(r'\s*Select all that apply:\s*', '', difficulty_and_type).strip()
+                    # If there's a colon at the end, remove it
+                    if difficulty.endswith(':'):
+                        difficulty = difficulty[:-1].strip()
+                
+                # Also check if "Select all that apply:" appears in the question text
+                if "Select all that apply:" in question_text:
+                    is_multiple_select = True
+                    question_text = question_text.replace("Select all that apply:", "").strip()
+                
+                current_question = {
+                    "number": question_number,
+                    "difficulty": difficulty,
+                    "type": "multiple_select" if is_multiple_select else "single_select",
+                    "question": question_text,
+                    "options": {}
+                }
+                i += 1
+                continue
             
-            # Remove difficulty markers if present
-            if question_text.startswith('(') and ')' in question_text:
-                closing_paren = question_text.find(')')
-                question_text = question_text[closing_paren + 1:].strip()
-            
-            # Determine question type
-            is_multiple_select = "Select all that apply:" in question_text
-            if is_multiple_select:
-                question_text = question_text.replace("Select all that apply:", "").strip()
-            
-            current_question = {
-                "number": question_number,
-                "difficulty": "Unknown",
-                "type": "multiple_select" if is_multiple_select else "single_select",
-                "question": question_text,
-                "options": {}
-            }
-            i += 1
-            continue
-            
-        # Parse answer options
-        option_match = re.match(r'^([A-Z])\.\s*(.*)', line)
-        if option_match and current_question:
-            option_letter = option_match.group(1)
-            option_text = option_match.group(2).strip()
-            current_question["options"][option_letter] = option_text
-            i += 1
-            continue
+            # Parse question without difficulty marker (fallback)
+            simple_question_match = re.match(r'^(\d+)\.\s*(.*)', line)
+            if simple_question_match:
+                if current_question and current_section:
+                    current_section["questions"].append(current_question)
+                
+                question_number = int(simple_question_match.group(1))
+                question_text = simple_question_match.group(2).strip()
+                
+                # Check if this line contains difficulty in parentheses
+                difficulty = "Unknown"
+                if question_text.startswith('**(') and ')**' in question_text:
+                    # Format: **(Easy)** Question text
+                    difficulty_match = re.match(r'^\*\*\(([^)]+)\)\*\*\s*(.*)', question_text)
+                    if difficulty_match:
+                        difficulty = difficulty_match.group(1)
+                        question_text = difficulty_match.group(2).strip()
+                elif question_text.startswith('(') and ')' in question_text:
+                    # Format: (Easy) Question text
+                    closing_paren = question_text.find(')')
+                    difficulty = question_text[1:closing_paren]
+                    question_text = question_text[closing_paren + 1:].strip()
+                
+                # Determine question type
+                is_multiple_select = "Select all that apply:" in question_text
+                if is_multiple_select:
+                    question_text = question_text.replace("Select all that apply:", "").strip()
+                
+                current_question = {
+                    "number": question_number,
+                    "difficulty": difficulty,
+                    "type": "multiple_select" if is_multiple_select else "single_select",
+                    "question": question_text,
+                    "options": {}
+                }
+                i += 1
+                continue
+                
+            # Parse answer options
+            option_match = re.match(r'^([A-Z])\.\s*(.*)', line)
+            if option_match and current_question:
+                option_letter = option_match.group(1)
+                option_text = option_match.group(2).strip()
+                current_question["options"][option_letter] = option_text
+                i += 1
+                continue
+                
+        except Exception as e:
+            print(f"Error parsing line {i+1}: '{line}' - {e}")
             
         i += 1
     

@@ -22,6 +22,18 @@
           "type": "single_select",
           "question": "What is the purpose of calling `news.head()` after loading the CSV?",
           "options": {
+            "A": "To show the last five rows of the DataFrame",
+            "B": "To show the first five rows of the DataFrame",
+            "C": "To count the number of articles",
+            "D": "To print column data types"
+          }
+        },
+        {
+          "number": 3,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Medium) ** Which columns are present in the loaded news DataFrame?",
+          "options": {
             "A": "title",
             "B": "author",
             "C": "date",
@@ -39,12 +51,7 @@
             "C": "A pandas Series containing all article titles",
             "D": "The full text of each article"
           }
-        }
-      ]
-    },
-    {
-      "title": "Section 2: Named Entity Recognition with spaCy",
-      "questions": [
+        },
         {
           "number": 5,
           "difficulty": "Hard",
@@ -56,12 +63,29 @@
             "C": "To automatically lemmatize text",
             "D": "To convert all numbers to strings"
           }
-        },
+        }
+      ]
+    },
+    {
+      "title": "Section 2: Named Entity Recognition with spaCy",
+      "questions": [
         {
           "number": 6,
           "difficulty": "Easy",
           "type": "single_select",
           "question": "What does NER stand for?",
+          "options": {
+            "A": "Named Entity Representation",
+            "B": "Named Entity Recognition",
+            "C": "Noun Expression Recognition",
+            "D": "Named Expression Representation"
+          }
+        },
+        {
+          "number": 7,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Medium) ** Which steps are required before performing NER on article titles using spaCy?",
           "options": {
             "A": "Load the spaCy language model",
             "B": "Pass the text through the model",
@@ -75,17 +99,24 @@
           "type": "single_select",
           "question": "What type of object is returned when you process a string with a spaCy model (e.g., `nlp(title)`)?",
           "options": {
+            "A": "A list of tokens",
+            "B": "A spaCy Doc object",
+            "C": "A pandas Series",
+            "D": "A string"
+          }
+        },
+        {
+          "number": 9,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Hard) ** Which attributes or methods can be used to extract named entities from a spaCy Doc object?",
+          "options": {
             "A": ".ents",
             "B": ".lemma_",
             "C": ".text",
             "D": ".label_"
           }
-        }
-      ]
-    },
-    {
-      "title": "Section 3: Interpreting and Using NER Output",
-      "questions": [
+        },
         {
           "number": 10,
           "difficulty": "Hard",
@@ -97,12 +128,29 @@
             "C": "Each word’s lemma",
             "D": "The number of sentences"
           }
-        },
+        }
+      ]
+    },
+    {
+      "title": "Section 3: Interpreting and Using NER Output",
+      "questions": [
         {
           "number": 11,
           "difficulty": "Easy",
           "type": "single_select",
           "question": "What does the NER label \"ORG\" typically represent?",
+          "options": {
+            "A": "A location",
+            "B": "An organization",
+            "C": "A date",
+            "D": "A product"
+          }
+        },
+        {
+          "number": 12,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Medium) ** Which of the following are standard NER entity types in spaCy?",
           "options": {
             "A": "PERSON",
             "B": "GPE",
@@ -127,6 +175,18 @@
           "difficulty": "Hard",
           "type": "single_select",
           "question": "Why might different spaCy models yield different NER results on the same text?",
+          "options": {
+            "A": "They are trained on different data and have different vocabularies",
+            "B": "They always return the same output",
+            "C": "Some models ignore punctuation",
+            "D": "Only one model supports English"
+          }
+        },
+        {
+          "number": 15,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Hard) ** What are potential uses of NER output in analyzing a news article corpus?",
           "options": {
             "A": "Identifying trends in organizations or people mentioned",
             "B": "Filtering articles by location or product",

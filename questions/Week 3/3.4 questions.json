@@ -10,10 +10,46 @@
           "type": "single_select",
           "question": "What is the primary purpose of Named Entity Recognition (NER) in NLP?",
           "options": {
+            "A": "Translate text between languages",
+            "B": "Identify and categorize key information such as names, places, or products",
+            "C": "Correct grammar in documents",
+            "D": "Summarize long passages"
+          }
+        },
+        {
+          "number": 2,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Medium) ** NER can be used in which of the following business settings?",
+          "options": {
             "A": "Customer support ticket routing",
             "B": "Resume review in HR",
             "C": "Assigning IT help desk requests",
             "D": "Submitting a vacation request"
+          }
+        },
+        {
+          "number": 3,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "In the context of NER, what is a \"named entity\"?",
+          "options": {
+            "A": "Any verb in a document",
+            "B": "Any phrase with more than two words",
+            "C": "Specific objects of interest like people, locations, organizations, or products",
+            "D": "Any adjective that describes a noun"
+          }
+        },
+        {
+          "number": 4,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Hard) ** According to the materials, which of the following are typical outputs or results of a NER process?",
+          "options": {
+            "A": "Categorized entities from text (e.g., “MacOS” as PRODUCT)",
+            "B": "Sentiment scores",
+            "C": "Detection of explicit grammar errors",
+            "D": "Association of entities with document sections"
           }
         }
       ]
@@ -22,10 +58,22 @@
       "title": "Section 2: NER Methods and Process",
       "questions": [
         {
-          "number": 3,
-          "difficulty": "Hard",
-          "type": "single_select",
-          "question": "In the context of NER, what is a \"named entity\"?",
+          "number": 5,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Medium) ** What are the two primary steps in the NER process?",
+          "options": {
+            "A": "Detect a named entity",
+            "B": "Categorize the named entity",
+            "C": "Translate the sentence",
+            "D": "Score the document's sentiment"
+          }
+        },
+        {
+          "number": 6,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Hard) ** Which approaches are commonly used for NER in NLP, as described in the lecture?",
           "options": {
             "A": "Lexicon-based approach",
             "B": "Rule-based approach",
@@ -44,6 +92,18 @@
             "C": "It generates artificial entities for testing",
             "D": "It always outperforms machine learning approaches"
           }
+        },
+        {
+          "number": 8,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "Which approach is most suitable for identifying entities that follow well-defined textual patterns (e.g., capitalized cities or company names)?",
+          "options": {
+            "A": "Lexicon-based",
+            "B": "Rule-based",
+            "C": "Manual annotation",
+            "D": "Visual inspection"
+          }
         }
       ]
     },
@@ -51,10 +111,10 @@
       "title": "Section 3: NER Limitations and Best Practices",
       "questions": [
         {
-          "number": 8,
-          "difficulty": "Hard",
-          "type": "single_select",
-          "question": "Which approach is most suitable for identifying entities that follow well-defined textual patterns (e.g., capitalized cities or company names)?",
+          "number": 9,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Hard) ** What are limitations or challenges of the lexicon-based approach to NER?",
           "options": {
             "A": "Poor performance on entities not in the dictionary",
             "B": "Difficulty handling new or misspelled names",

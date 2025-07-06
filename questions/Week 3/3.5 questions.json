@@ -10,6 +10,18 @@
           "type": "single_select",
           "question": "What is the primary goal of comparing documents in a corpus?",
           "options": {
+            "A": "To randomly group documents",
+            "B": "To quantify similarity or distance between documents",
+            "C": "To determine document length only",
+            "D": "To assign grammar categories"
+          }
+        },
+        {
+          "number": 2,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Medium) ** Which distance measures are discussed for comparing numeric data?",
+          "options": {
             "A": "Euclidean distance",
             "B": "Mahalanobis distance",
             "C": "Levenshtein distance",
@@ -27,24 +39,36 @@
             "C": "The straight-line (hypotenuse) distance between two points",
             "D": "The cosine between their vectors"
           }
-        }
-      ]
-    },
-    {
-      "title": "Section 2: Vector Space Models and Document-Term Matrix",
-      "questions": [
+        },
         {
           "number": 4,
           "difficulty": "Hard",
           "type": "single_select",
           "question": "What does cosine similarity ignore that Euclidean distance emphasizes?",
           "options": {
+            "A": "The angle between vectors",
+            "B": "The magnitude (scale) of vectors",
+            "C": "The orientation of data",
+            "D": "The value of each axis"
+          }
+        },
+        {
+          "number": 5,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Medium) ** Which of the following are true about cosine similarity, according to the lecture?",
+          "options": {
             "A": "It gives a value between -1 and 1, but usually 0 to 1 in text analysis",
             "B": "A value close to 1 means high similarity",
             "C": "It is computationally efficient",
             "D": "It is strongly affected by the scale of the data"
           }
-        },
+        }
+      ]
+    },
+    {
+      "title": "Section 2: Vector Space Models and Document-Term Matrix",
+      "questions": [
         {
           "number": 6,
           "difficulty": "Hard",
@@ -56,6 +80,30 @@
             "C": "k-dimensional vector space using a document-term matrix",
             "D": "Single-word comparisons"
           }
+        },
+        {
+          "number": 7,
+          "difficulty": "Medium",
+          "type": "single_select",
+          "question": "Which of the following statements best describes the effect of document length on cosine similarity?",
+          "options": {
+            "A": "Longer documents always appear more similar",
+            "B": "Cosine similarity normalizes for document length",
+            "C": "Document length is amplified in cosine similarity",
+            "D": "Cosine similarity ignores all content"
+          }
+        },
+        {
+          "number": 8,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**(Hard, Select all that apply):** Which of the following alternative methods to cosine similarity are mentioned for text comparison?",
+          "options": {
+            "A": "Levenshtein (edit) distance",
+            "B": "Jaccard distance",
+            "C": "Manhattan distance",
+            "D": "Bieber distance"
+          }
         }
       ]
     },
@@ -63,22 +111,22 @@
       "title": "Section 3: Matrix Algebra and Corpus-Wide Comparison",
       "questions": [
         {
-          "number": 7,
-          "difficulty": "Medium",
-          "type": "single_select",
-          "question": "Which of the following statements best describes the effect of document length on cosine similarity?",
-          "options": {
-            "A": "Levenshtein (edit) distance",
-            "B": "Jaccard distance",
-            "C": "Manhattan distance",
-            "D": "Bieber distance"
-          }
-        },
-        {
           "number": 9,
           "difficulty": "Hard",
           "type": "single_select",
           "question": "When computing the cosine similarity matrix for all documents, what does the diagonal of the resulting matrix represent?",
+          "options": {
+            "A": "The difference between documents",
+            "B": "The similarity of each document with itself",
+            "C": "The product of word frequencies",
+            "D": "The sum of similarities with others"
+          }
+        },
+        {
+          "number": 10,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**(Hard, Select all that apply):** According to the lecture, what are key benefits of using cosine similarity for document comparison?",
           "options": {
             "A": "Efficient computation with linear algebra",
             "B": "Robust to differences in document length",

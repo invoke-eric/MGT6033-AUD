@@ -10,6 +10,18 @@
           "type": "single_select",
           "question": "What is the primary purpose of using scikit-learn's `CountVectorizer` in this module?",
           "options": {
+            "A": "To summarize the text with one number",
+            "B": "To build a document-term matrix from a corpus",
+            "C": "To generate random words",
+            "D": "To translate reviews between languages"
+          }
+        },
+        {
+          "number": 2,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Medium) ** What preprocessing steps are handled or can be customized in `CountVectorizer`?",
+          "options": {
             "A": "Lemmatization",
             "B": "Removing stop words",
             "C": "Minimum document frequency filtering",
@@ -22,10 +34,34 @@
           "type": "single_select",
           "question": "What is the default output format of `CountVectorizer`?",
           "options": {
+            "A": "A pandas DataFrame",
+            "B": "A dense NumPy matrix",
+            "C": "A Compressed Sparse Row (CSR) sparse matrix",
+            "D": "A list of dictionaries"
+          }
+        },
+        {
+          "number": 4,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Medium) ** Why are sparse matrices preferred for storing document-term matrices in NLP?",
+          "options": {
             "A": "They save memory",
             "B": "They allow faster access to rows and columns",
             "C": "Most matrix values are zero",
             "D": "They can store more diverse data types than dense matrices"
+          }
+        },
+        {
+          "number": 5,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "What does the method `get_feature_names_out()` return after fitting a `CountVectorizer`?",
+          "options": {
+            "A": "Row indices of the matrix",
+            "B": "The list of token (word) column names in order",
+            "C": "A dictionary mapping words to review ratings",
+            "D": "The sentences of the original text"
           }
         }
       ]
@@ -34,10 +70,10 @@
       "title": "Section 2: Building the DTM: Hard Way vs Easy Way",
       "questions": [
         {
-          "number": 5,
-          "difficulty": "Hard",
-          "type": "single_select",
-          "question": "What does the method `get_feature_names_out()` return after fitting a `CountVectorizer`?",
+          "number": 6,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Medium) ** According to the demo, what filtering steps does the \"hard way\" tokenization function apply?",
           "options": {
             "A": "Remove non-alphabetic tokens",
             "B": "Remove stop words",
@@ -68,6 +104,30 @@
             "C": "Counting only verbs in each document",
             "D": "A matrix of word embeddings"
           }
+        },
+        {
+          "number": 9,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "Why does the number of columns in the DTM decrease when you increase `min_df`?",
+          "options": {
+            "A": "It only keeps words that occur in at least `min_df` documents, removing rarer words",
+            "B": "It merges similar words",
+            "C": "It excludes all punctuation",
+            "D": "It ignores stop words by default"
+          }
+        },
+        {
+          "number": 10,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Hard) ** After using a custom tokenizer with `CountVectorizer`, which of the following might still require manual adjustment?",
+          "options": {
+            "A": "Lemmatization",
+            "B": "Removal of short tokens",
+            "C": "Elimination of numbers",
+            "D": "Handling of rare words (below min_df)"
+          }
         }
       ]
     },
@@ -75,22 +135,34 @@
       "title": "Section 3: Dictionary-Based Sentiment Analysis",
       "questions": [
         {
-          "number": 9,
-          "difficulty": "Hard",
-          "type": "single_select",
-          "question": "Why does the number of columns in the DTM decrease when you increase `min_df`?",
-          "options": {
-            "A": "Lemmatization",
-            "B": "Removal of short tokens",
-            "C": "Elimination of numbers",
-            "D": "Handling of rare words (below min_df)"
-          }
-        },
-        {
           "number": 11,
           "difficulty": "Easy",
           "type": "single_select",
           "question": "What is the main idea behind using a sentiment dictionary for analysis?",
+          "options": {
+            "A": "Assigning a score or label based on the occurrence of positive/negative words",
+            "B": "Generating new reviews",
+            "C": "Removing all adjectives",
+            "D": "Counting the number of sentences only"
+          }
+        },
+        {
+          "number": 12,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Medium) ** According to the demo, what categories does the Harvard General Inquirer Dictionary provide?",
+          "options": {
+            "A": "Positive words",
+            "B": "Negative words",
+            "C": "Product IDs",
+            "D": "Multiple information categories per word"
+          }
+        },
+        {
+          "number": 13,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Hard) ** What steps are needed to use the General Inquirer sentiment dictionary in a pandas workflow?",
           "options": {
             "A": "Read the Excel file with `read_excel`",
             "B": "Filter rows for positive/negative categories",
@@ -109,6 +181,18 @@
             "C": "They are always stop words",
             "D": "They are specific to Amazon reviews"
           }
+        },
+        {
+          "number": 15,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "What is the recommended measure for calculating review \"tone\" in the document-term matrix?",
+          "options": {
+            "A": "Sum of all word counts",
+            "B": "(Positive - Negative) / (Total words)",
+            "C": "Number of sentences",
+            "D": "Product rating"
+          }
         }
       ]
     },
@@ -116,10 +200,10 @@
       "title": "Section 4: Pattern-Based & TextBlob Sentiment Analysis",
       "questions": [
         {
-          "number": 15,
-          "difficulty": "Hard",
-          "type": "single_select",
-          "question": "What is the recommended measure for calculating review \"tone\" in the document-term matrix?",
+          "number": 16,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Medium) ** What are features of pattern-based approaches (e.g., TextBlob) to sentiment analysis?",
           "options": {
             "A": "They account for contextual modifiers like \"not\"",
             "B": "They require passage-level input",
@@ -156,6 +240,18 @@
           "difficulty": "Medium",
           "type": "single_select",
           "question": "Why did Robbie convert the tuple output from a custom TextBlob function to columns in the DataFrame?",
+          "options": {
+            "A": "To facilitate correlation and further analysis",
+            "B": "To enable merging results with review texts",
+            "C": "To avoid redundancy",
+            "D": "To count the most common words"
+          }
+        },
+        {
+          "number": 20,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Medium) ** Which of the following are recommended as additional steps after calculating sentiment or similarity scores?",
           "options": {
             "A": "Always check your data with `.head()` for a visual check",
             "B": "Investigate the actual review text for extreme values",

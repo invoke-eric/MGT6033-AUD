@@ -4,6 +4,8 @@ import re
 import logging
 logger = logging.getLogger(__name__)
 
+WEEK3_OPTIONS = ["3.1", "3.2", "3.3", "3.4", "3.5", "3A", "3B", "3C"]
+
 def parse_questions(json_data):
     questions = []
     for section in json_data.get("sections", []):
@@ -32,6 +34,21 @@ def parse_answers(json_data):
                 answers[question_number] = correct_options
     return answers
 
+def load_qa_files(selected_item):
+    base_path = "questions/Week 3/"
+    if selected_item in ["3A", "3B", "3C"]:
+        questions_file = f"{base_path}{selected_item} demo questions.json"
+        answers_file = f"{base_path}{selected_item} demo answers.json"
+    else:
+        questions_file = f"{base_path}{selected_item} questions.json"
+        answers_file = f"{base_path}{selected_item} answers.json"
+
+    with open(questions_file, "r") as f:
+        questions_data = json.load(f)
+    with open(answers_file, "r") as f:
+        answers_data = json.load(f)
+    return questions_data, answers_data
+
 def main():
     st.title("Quiz App")
 
@@ -40,18 +57,34 @@ def main():
         st.session_state.user_choices = {}
     if 'quiz_submitted' not in st.session_state:
         st.session_state.quiz_submitted = False
+    if 'selected_quiz' not in st.session_state:
+        st.session_state.selected_quiz = WEEK3_OPTIONS[0] # Default to the first option
+
+    # Quiz selection
+    selected_quiz_new = st.selectbox(
+        "Select a quiz:",
+        WEEK3_OPTIONS,
+        index=WEEK3_OPTIONS.index(st.session_state.selected_quiz)
+    )
+
+    if selected_quiz_new != st.session_state.selected_quiz:
+        st.session_state.selected_quiz = selected_quiz_new
+        st.session_state.quiz_submitted = False
+        st.session_state.user_choices = {}
+        # Clear individual question choices from session state
+        for key in list(st.session_state.keys()):
+            if key.startswith('q') and key.endswith('_selected_options'):
+                del st.session_state[key]
+        st.rerun()
 
     # Load questions and answers
     try:
-        with open("questions/Week 3/3.1 questions.json", "r") as f:
-            questions_data = json.load(f)
-        with open("questions/Week 3/3.1 answers.json", "r") as f:
-            answers_data = json.load(f)
+        questions_data, answers_data = load_qa_files(st.session_state.selected_quiz)
     except FileNotFoundError:
-        st.error("Question or answer JSON file not found. Make sure the paths are correct.")
+        st.error(f"Question or answer JSON file not found for {st.session_state.selected_quiz}. Make sure the paths are correct.")
         return
     except json.JSONDecodeError:
-        st.error("Error decoding JSON file. Please check the file format.")
+        st.error(f"Error decoding JSON file for {st.session_state.selected_quiz}. Please check the file format.")
         return
 
     questions = parse_questions(questions_data)
