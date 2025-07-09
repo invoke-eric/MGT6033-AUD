@@ -1,0 +1,135 @@
+{
+  "title": "Quiz Questions",
+  "sections": [
+    {
+      "title": "Section 1: Latent Dirichlet Allocation (LDA) Concepts",
+      "questions": [
+        {
+          "number": 1,
+          "difficulty": "Easy",
+          "type": "single_select",
+          "question": "What does the \"latent\" in Latent Dirichlet Allocation (LDA) refer to?",
+          "options": {
+            "A": "Observed word counts",
+            "B": "Hidden or implicit topics",
+            "C": "Document length",
+            "D": "The number of documents"
+          }
+        },
+        {
+          "number": 2,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**(Medium, Select all that apply):** Which of the following are key assumptions of the LDA generative process?",
+          "options": {
+            "A": "Each word occurs with some probability within each topic",
+            "B": "Each topic occurs with some probability throughout each document",
+            "C": "Each document contains only one topic",
+            "D": "Word and topic distributions are governed by Dirichlet priors"
+          }
+        },
+        {
+          "number": 3,
+          "difficulty": "Medium",
+          "type": "single_select",
+          "question": "What is the main role of the Dirichlet distribution in LDA?",
+          "options": {
+            "A": "It is used to generate observed words",
+            "B": "It acts as a prior for topic and word distributions",
+            "C": "It determines the number of documents",
+            "D": "It is used for evaluating model fit"
+          }
+        },
+        {
+          "number": 4,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**(Hard, Select all that apply):** Which statements about the Alpha and Beta hyperparameters in LDA are correct?",
+          "options": {
+            "A": "Alpha is the topic prior, controlling topic distribution within documents",
+            "B": "Beta is the word prior, controlling word distribution within topics",
+            "C": "Higher Alpha leads to documents with more uniform topic distributions",
+            "D": "Lower Beta leads to topics with more uniform word distributions"
+          }
+        },
+        {
+          "number": 5,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "Why can't you use TF-IDF as input to LDA?",
+          "options": {
+            "A": "LDA requires binary input",
+            "B": "LDA requires integer word counts",
+            "C": "LDA only works with normalized data",
+            "D": "LDA requires document labels"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Section 2: Non-negative Matrix Factorization (NMF) Concepts",
+      "questions": [
+        {
+          "number": 6,
+          "difficulty": "Easy",
+          "type": "single_select",
+          "question": "What does \"non-negative\" refer to in Non-negative Matrix Factorization (NMF)?",
+          "options": {
+            "A": "The matrix contains only positive or zero values",
+            "B": "The matrix contains only negative values",
+            "C": "The matrix is always square",
+            "D": "The matrix contains only binary values"
+          }
+        },
+        {
+          "number": 7,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**(Medium, Select all that apply):** In NMF, which matrices are produced by factorizing the document-term matrix?",
+          "options": {
+            "A": "Document-topic matrix (W)",
+            "B": "Topic-word matrix (H)",
+            "C": "Word-label matrix (L)",
+            "D": "Document-frequency matrix (F)"
+          }
+        },
+        {
+          "number": 8,
+          "difficulty": "Medium",
+          "type": "single_select",
+          "question": "What is the main intuition behind NMF for topic modeling?",
+          "options": {
+            "A": "Decompose the document-term matrix into two smaller, interpretable matrices",
+            "B": "Assign each document to a single topic",
+            "C": "Use Bayesian priors to generate topics",
+            "D": "Normalize all word counts to probabilities"
+          }
+        },
+        {
+          "number": 9,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**(Hard, Select all that apply):** Which of the following are true about the outputs of LDA and NMF?",
+          "options": {
+            "A": "Both produce a topic-word matrix",
+            "B": "Both produce a document-topic matrix",
+            "C": "Both require the number of topics to be specified by the user",
+            "D": "Both guarantee identical results for the same data"
+          }
+        },
+        {
+          "number": 10,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "How do LDA and NMF differ in their underlying approach to topic modeling?",
+          "options": {
+            "A": "LDA is Bayesian and generative, NMF is purely mathematical and factorizes the DTM",
+            "B": "Both use Dirichlet distributions for priors",
+            "C": "NMF requires labeled data, LDA does not",
+            "D": "LDA only works with binary matrices"
+          }
+        }
+      ]
+    }
+  ]
+}

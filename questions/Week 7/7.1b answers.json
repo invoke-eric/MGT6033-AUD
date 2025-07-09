@@ -1,0 +1,90 @@
+{
+  "title": "Answer Key",
+  "sections": [
+    {
+      "title": "Section 1: Design Considerations for Neural Networks in NLP",
+      "questions": [
+        {
+          "number": 1,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answer:** A",
+          "options": {}
+        },
+        {
+          "number": 2,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answers:** A, B",
+          "options": {}
+        },
+        {
+          "number": 3,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answer:** A",
+          "options": {}
+        },
+        {
+          "number": 4,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answer:** A",
+          "options": {}
+        }
+      ]
+    },
+    {
+      "title": "Section 2: Computational and Training Considerations",
+      "questions": [
+        {
+          "number": 5,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answers:** A, B, C",
+          "options": {}
+        },
+        {
+          "number": 6,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answer:** A",
+          "options": {}
+        },
+        {
+          "number": 7,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answers:** A, B, C",
+          "options": {}
+        },
+        {
+          "number": 8,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answer:** A",
+          "options": {}
+        }
+      ]
+    },
+    {
+      "title": "Section 3: Evaluation and Ethical Considerations",
+      "questions": [
+        {
+          "number": 9,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answer:** A",
+          "options": {}
+        },
+        {
+          "number": 10,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answers:** A, B, C",
+          "options": {}
+        }
+      ]
+    }
+  ]
+}

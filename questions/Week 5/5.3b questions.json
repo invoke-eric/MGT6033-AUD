@@ -1,0 +1,140 @@
+{
+  "title": "Quiz Questions",
+  "sections": [
+    {
+      "title": "Section 1: K-means Clustering Concepts and Procedure",
+      "questions": [
+        {
+          "number": 1,
+          "difficulty": "Easy",
+          "type": "single_select",
+          "question": "What is the main assumption about the shape of clusters in K-means clustering?",
+          "options": {
+            "A": "Clusters are hierarchical",
+            "B": "Clusters are arbitrary shapes",
+            "C": "Clusters are spherical",
+            "D": "Clusters are density-based"
+          }
+        },
+        {
+          "number": 2,
+          "difficulty": "Medium",
+          "type": "single_select",
+          "question": "Which distance metric is typically used in K-means clustering to assign points to clusters?",
+          "options": {
+            "A": "Manhattan distance",
+            "B": "Euclidean distance",
+            "C": "Cosine similarity",
+            "D": "Jaccard distance"
+          }
+        },
+        {
+          "number": 3,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Hard) ** What are some limitations of K-means clustering?",
+          "options": {
+            "A": "Only detects spherical clusters",
+            "B": "Can be unstable due to random initialization",
+            "C": "Can get stuck in local minima",
+            "D": "Requires labeled data"
+          }
+        },
+        {
+          "number": 4,
+          "difficulty": "Medium",
+          "type": "single_select",
+          "question": "What is the first step in the K-means clustering algorithm?",
+          "options": {
+            "A": "Assign points to clusters",
+            "B": "Randomly initialize cluster centroids",
+            "C": "Compute silhouette scores",
+            "D": "Normalize data"
+          }
+        },
+        {
+          "number": 5,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "What does the elbow method help determine in K-means clustering?",
+          "options": {
+            "A": "The optimal number of clusters",
+            "B": "The best distance metric",
+            "C": "The maximum number of iterations",
+            "D": "The initial centroid positions"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Section 2: Evaluating K-means and Clustering Metrics",
+      "questions": [
+        {
+          "number": 6,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Hard) ** Which metrics can be used to evaluate K-means clustering quality?",
+          "options": {
+            "A": "Within-cluster sum of squares (WCSS)",
+            "B": "Calinski-Harabasz index",
+            "C": "Davies-Bouldin index",
+            "D": "Accuracy score"
+          }
+        },
+        {
+          "number": 7,
+          "difficulty": "Medium",
+          "type": "single_select",
+          "question": "What does a silhouette score close to -1 indicate for a data point?",
+          "options": {
+            "A": "The point is well-matched to its assigned cluster",
+            "B": "The point is a centroid",
+            "C": "The point is an outlier",
+            "D": "The point is closer to another cluster than its own"
+          }
+        },
+        {
+          "number": 8,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "What is a potential issue when using K-means with high-dimensional unstructured data?",
+          "options": {
+            "A": "It always finds the global minimum",
+            "B": "It may get stuck in a local minimum due to many peaks and valleys in the loss function",
+            "C": "It does not require standardization",
+            "D": "It works best with categorical data"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Section 3: HDBSCAN Clustering Concepts and Comparison",
+      "questions": [
+        {
+          "number": 9,
+          "difficulty": "Easy",
+          "type": "single_select",
+          "question": "What does HDBSCAN stand for?",
+          "options": {
+            "A": "Hierarchical Density-Based Spatial Clustering of Applications with Noise",
+            "B": "High-Dimensional Bayesian Spatial Clustering Algorithm with Noise",
+            "C": "Hierarchical Data-Based Statistical Clustering Analysis with Noise",
+            "D": "Hybrid Density-Based Spatial Clustering Algorithm with Noise"
+          }
+        },
+        {
+          "number": 10,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Hard) ** What are advantages of HDBSCAN over K-means?",
+          "options": {
+            "A": "Does not require specifying the number of clusters",
+            "B": "Can handle clusters of varying densities",
+            "C": "Assigns all points to clusters",
+            "D": "Allows for more or less granular clustering"
+          }
+        }
+      ]
+    }
+  ]
+}

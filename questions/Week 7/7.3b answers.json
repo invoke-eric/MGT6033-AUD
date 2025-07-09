@@ -1,0 +1,90 @@
+{
+  "title": "Answer Key",
+  "sections": [
+    {
+      "title": "Section 1: BERT and Transfer Learning Fundamentals",
+      "questions": [
+        {
+          "number": 1,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answer:** A",
+          "options": {}
+        },
+        {
+          "number": 2,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answers:** A, B, C, D",
+          "options": {}
+        },
+        {
+          "number": 3,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answer:** A",
+          "options": {}
+        }
+      ]
+    },
+    {
+      "title": "Section 2: BERT Model Applications and Design",
+      "questions": [
+        {
+          "number": 4,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answers:** A, B, D",
+          "options": {}
+        },
+        {
+          "number": 5,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answer:** A",
+          "options": {}
+        },
+        {
+          "number": 6,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answers:** A, B, C",
+          "options": {}
+        },
+        {
+          "number": 7,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answer:** B",
+          "options": {}
+        }
+      ]
+    },
+    {
+      "title": "Section 3: Advanced Applications and Considerations",
+      "questions": [
+        {
+          "number": 8,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answer:** A",
+          "options": {}
+        },
+        {
+          "number": 9,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answers:** A, B, C",
+          "options": {}
+        },
+        {
+          "number": 10,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answer:** A",
+          "options": {}
+        }
+      ]
+    }
+  ]
+}

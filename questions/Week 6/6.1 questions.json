@@ -1,0 +1,136 @@
+{
+  "title": "Quiz Questions",
+  "sections": [
+    {
+      "title": "Section 1: Supervised Learning Fundamentals",
+      "questions": [
+        {
+          "number": 1,
+          "difficulty": "Easy",
+          "type": "single_select",
+          "question": "What is the key distinction between regression-type and classification-type supervised problems?",
+          "options": {
+            "A": "The number of features in X",
+            "B": "Whether the output variable Y is continuous or discrete",
+            "C": "The amount of data available",
+            "D": "Whether the model uses text or numbers"
+          }
+        },
+        {
+          "number": 2,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**(Medium, Select all that apply):** Which of the following are examples of regression-type supervised learning problems in NLP?",
+          "options": {
+            "A": "Predicting future sales based on text data",
+            "B": "Predicting group membership from document content",
+            "C": "Predicting stock returns using news articles",
+            "D": "Predicting whether a press release signals firm failure"
+          }
+        },
+        {
+          "number": 3,
+          "difficulty": "Medium",
+          "type": "single_select",
+          "question": "In supervised learning, what is the primary risk that can cause a model to perform well on training data but poorly on new data?",
+          "options": {
+            "A": "Underfitting",
+            "B": "Overfitting",
+            "C": "Data normalization",
+            "D": "Cross-validation"
+          }
+        },
+        {
+          "number": 4,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**(Hard, Select all that apply):** Which strategies are discussed as ways to avoid or detect overfitting in supervised models?",
+          "options": {
+            "A": "Use a hold-out sample for evaluation",
+            "B": "Employ cross-validation",
+            "C": "Reduce model complexity",
+            "D": "Always use all available features"
+          }
+        },
+        {
+          "number": 5,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "Why is it important to avoid contaminating the hold-out sample in supervised learning?",
+          "options": {
+            "A": "It ensures the model can be trained more quickly",
+            "B": "It allows for a true assessment of out-of-sample predictive power",
+            "C": "It increases the training set size",
+            "D": "It guarantees perfect accuracy"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Section 2: Model Training Workflow and Best Practices",
+      "questions": [
+        {
+          "number": 6,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**(Medium, Select all that apply):** What are the essential steps for training a supervised model, as outlined in the lecture?",
+          "options": {
+            "A": "Preprocess and prepare the data",
+            "B": "Select the model(s)",
+            "C": "Split data into training and hold-out sets",
+            "D": "Train with cross-validation",
+            "E": "Evaluate model fit"
+          }
+        },
+        {
+          "number": 7,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "Why might random splitting of data for training and hold-out sets be inappropriate in some cases?",
+          "options": {
+            "A": "It always leads to overfitting",
+            "B": "Similar observations (e.g., from the same company or time period) may end up in both sets, contaminating the hold-out sample",
+            "C": "It increases the variance of the model",
+            "D": "It is never used in practice"
+          }
+        },
+        {
+          "number": 8,
+          "difficulty": "Medium",
+          "type": "single_select",
+          "question": "What is the purpose of cross-validation during model training?",
+          "options": {
+            "A": "To increase the training set size",
+            "B": "To minimize the impact of data-specific nuances on model parameters",
+            "C": "To reduce the number of features",
+            "D": "To guarantee perfect model fit"
+          }
+        },
+        {
+          "number": 9,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**(Hard, Select all that apply):** Which of the following are common methods for reducing model complexity to avoid overfitting?",
+          "options": {
+            "A": "Feature selection",
+            "B": "Removing irrelevant features",
+            "C": "Limiting polynomial degree",
+            "D": "Adding more noise to the data"
+          }
+        },
+        {
+          "number": 10,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "According to the lecture, what should always be included when evaluating model fit for regression-type supervised problems?",
+          "options": {
+            "A": "Only the training accuracy",
+            "B": "Metrics such as mean-squared error or R-squared, and expert judgment on feature importance",
+            "C": "The number of features in the model",
+            "D": "The number of cross-validation folds"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "title": "Quiz Questions",
+  "sections": [
+    {
+      "title": "Section 1: Regular Expression Operators and Match Patterns",
+      "questions": [
+        {
+          "number": 1,
+          "difficulty": "Easy",
+          "type": "single_select",
+          "question": "Which of the following is a key guideline when using the dot (`.`) operator in regular expressions?",
+          "options": {
+            "A": "Use it to match only numbers",
+            "B": "Use it sparingly, as it matches any character",
+            "C": "Always combine it with a plus sign",
+            "D": "Only use it at the end of a pattern"
+          }
+        },
+        {
+          "number": 2,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**(Medium, Select all that apply):** Which regular expression operators are used to specify repetition of character classes or groups?",
+          "options": {
+            "A": "+",
+            "B": "*",
+            "C": "?",
+            "D": "{a,b}",
+            "E": "$"
+          }
+        },
+        {
+          "number": 3,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "What is the main reason to use escape characters (backslash `\\`) liberally in regular expressions?",
+          "options": {
+            "A": "Escapes are required for all letters",
+            "B": "Escapes prevent special characters from being treated as operators",
+            "C": "Escapes make the regex case-insensitive",
+            "D": "Escapes are only needed for digits"
+          }
+        },
+        {
+          "number": 4,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**(Medium, Select all that apply):** In the provided domain name pattern, which character classes are allowed in a domain label?",
+          "options": {
+            "A": "Letters",
+            "B": "Numbers",
+            "C": "Hyphens",
+            "D": "Underscores"
+          }
+        },
+        {
+          "number": 5,
+          "difficulty": "Hard, Select all that apply",
+          "type": "multiple_select",
+          "question": "Why is the `\\w` character class not suitable for matching domain labels in web addresses?",
+          "options": {
+            "A": "It does not include numbers",
+            "B": "It does not include hyphens",
+            "C": "It includes underscores, which are not allowed in domain names",
+            "D": "It is case-sensitive"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Section 2: Building and Grouping Patterns",
+      "questions": [
+        {
+          "number": 6,
+          "difficulty": "Medium",
+          "type": "single_select",
+          "question": "What is the purpose of using parentheses in a regular expression pattern?",
+          "options": {
+            "A": "To escape special characters",
+            "B": "To create match groups and apply operators to sequences",
+            "C": "To match only digits",
+            "D": "To force the pattern to start at the beginning of a line"
+          }
+        },
+        {
+          "number": 7,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**(Hard, Select all that apply):** In the example web address pattern, which components are made optional or repeatable using regular expression operators?",
+          "options": {
+            "A": "The transfer protocol (http/https)",
+            "B": "The domain label sequence",
+            "C": "The subfolder/page path",
+            "D": "The top-level domain (e.g., .com)"
+          }
+        },
+        {
+          "number": 8,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "What is the effect of placing a `?` after the \"s\" in \"https?\" in the protocol pattern?",
+          "options": {
+            "A": "It makes the \"s\" required",
+            "B": "It makes the \"s\" optional, matching both \"http\" and \"https\"",
+            "C": "It matches only \"https\"",
+            "D": "It matches only \"http\""
+          }
+        },
+        {
+          "number": 9,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**(Hard, Select all that apply):** Why are word boundaries (`\\b`) used at the start and end of the full web address pattern?",
+          "options": {
+            "A": "To ensure the match is a complete word or address",
+            "B": "To prevent matching addresses with illegal characters",
+            "C": "To restrict matches to the beginning of a line",
+            "D": "To avoid partial matches within longer strings"
+          }
+        },
+        {
+          "number": 10,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "What is a practical reason for testing regular expressions at a site like regex101.com?",
+          "options": {
+            "A": "It automatically writes the regex for you",
+            "B": "It provides instant feedback and highlights matches, helping you debug patterns",
+            "C": "It only works for Python regex",
+            "D": "It guarantees perfect matches in all programming languages"
+          }
+        }
+      ]
+    }
+  ]
+}

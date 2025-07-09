@@ -1,0 +1,135 @@
+{
+  "title": "Quiz Questions",
+  "sections": [
+    {
+      "title": "Section 1: Word Embeddings – Use Cases and Interpretability",
+      "questions": [
+        {
+          "number": 1,
+          "difficulty": "Easy",
+          "type": "single_select",
+          "question": "What is a primary advantage of using word embeddings in NLP applications?",
+          "options": {
+            "A": "They make text data more sparse",
+            "B": "They allow capturing semantic similarity between words",
+            "C": "They guarantee perfect translation",
+            "D": "They only work for English text"
+          }
+        },
+        {
+          "number": 2,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Medium) ** In which of the following NLP tasks are word embeddings commonly used?",
+          "options": {
+            "A": "Sentiment analysis",
+            "B": "Document classification",
+            "C": "Named Entity Recognition (NER)",
+            "D": "Random number generation"
+          }
+        },
+        {
+          "number": 3,
+          "difficulty": "Medium",
+          "type": "single_select",
+          "question": "What is the main difference between one-hot encoding and word embeddings?",
+          "options": {
+            "A": "One-hot encoding is dense, embeddings are sparse",
+            "B": "Embeddings capture relationships between words, one-hot does not",
+            "C": "One-hot encoding uses negative numbers",
+            "D": "Embeddings only work for numbers"
+          }
+        },
+        {
+          "number": 4,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Hard) ** Which of the following statements about word embedding interpretability are true?",
+          "options": {
+            "A": "Individual dimensions have no inherent meaning",
+            "B": "Vector arithmetic can reveal analogies (e.g., king - man + woman ≈ queen)",
+            "C": "Embeddings are always human-interpretable",
+            "D": "Embeddings can be visualized in 2D using dimensionality reduction"
+          }
+        },
+        {
+          "number": 5,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "Why might two words with similar meanings have vectors that are close together in embedding space?",
+          "options": {
+            "A": "They are always spelled similarly",
+            "B": "They appear in similar contexts in the training data",
+            "C": "They have the same frequency in the corpus",
+            "D": "They are both stop words"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Section 2: Embedding Limitations and Best Practices",
+      "questions": [
+        {
+          "number": 6,
+          "difficulty": "Medium",
+          "type": "single_select",
+          "question": "What is a common limitation of pre-trained static word embeddings?",
+          "options": {
+            "A": "They require labeled data for every task",
+            "B": "They assign the same vector to a word regardless of context",
+            "C": "They are only available for rare languages",
+            "D": "They always outperform contextual embeddings"
+          }
+        },
+        {
+          "number": 7,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Medium) ** What are best practices when applying word embeddings to a new domain?",
+          "options": {
+            "A": "Consider domain-specific training or fine-tuning",
+            "B": "Always use the largest available embedding model",
+            "C": "Check for out-of-vocabulary (OOV) words",
+            "D": "Evaluate embedding performance on your specific task"
+          }
+        },
+        {
+          "number": 8,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "Which of the following is a reason to use dimensionality reduction (e.g., t-SNE, PCA) on word embeddings?",
+          "options": {
+            "A": "To increase the number of embedding dimensions",
+            "B": "To visualize high-dimensional relationships between words",
+            "C": "To make embeddings more sparse",
+            "D": "To convert embeddings to one-hot vectors"
+          }
+        },
+        {
+          "number": 9,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Hard) ** What should you check before using pre-trained embeddings with your own text data?",
+          "options": {
+            "A": "That the vocabulary matches your domain",
+            "B": "That the embedding dimension fits your model architecture",
+            "C": "That embeddings are normalized",
+            "D": "That all words in your corpus have vectors"
+          }
+        },
+        {
+          "number": 10,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "In what scenario would you need to train your own word embeddings from scratch?",
+          "options": {
+            "A": "When your text domain is highly specialized and differs from general corpora",
+            "B": "When you want to reduce model size",
+            "C": "When you only have a small dataset",
+            "D": "When you want to use one-hot encoding"
+          }
+        }
+      ]
+    }
+  ]
+}

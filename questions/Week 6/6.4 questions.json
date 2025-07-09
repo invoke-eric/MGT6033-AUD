@@ -1,0 +1,140 @@
+{
+  "title": "Quiz Questions",
+  "sections": [
+    {
+      "title": "Section 1: Logit, Probit, and Linear Classifiers",
+      "questions": [
+        {
+          "number": 1,
+          "difficulty": "Easy",
+          "type": "single_select",
+          "question": "What is a key difference between logit and probit models for classification?",
+          "options": {
+            "A": "Probit cannot be used for binary outcomes",
+            "B": "Logit is only for regression; probit is only for classification",
+            "C": "Logit assumes a linear relation with the log odds; probit assumes a linear relation with the cumulative distribution function",
+            "D": "Logit always uses non-linear predictors"
+          }
+        },
+        {
+          "number": 2,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**(Medium, Select all that apply):** What are limitations of logit and probit models when applied to text-based classification?",
+          "options": {
+            "A": "Always require multiclass labels",
+            "B": "Susceptible to collinearity",
+            "C": "Do not include built-in regularization",
+            "D": "Assume linearity between input variables and a transformation of the outcome"
+          }
+        },
+        {
+          "number": 3,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "Why might logit and probit models be less suitable for high-dimensional NLP tasks compared to other classifiers?",
+          "options": {
+            "A": "They cannot handle text data at all",
+            "B": "They lack mechanisms for identifying important features or regularizing the model",
+            "C": "They always require categorical predictors",
+            "D": "They are non-parametric"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Section 2: Decision Trees",
+      "questions": [
+        {
+          "number": 4,
+          "difficulty": "Easy",
+          "type": "single_select",
+          "question": "What is a decision tree classifier best described as?",
+          "options": {
+            "A": "A model that emulates a flow-chart style decision process",
+            "B": "A linear regression model",
+            "C": "A clustering algorithm",
+            "D": "A type of neural network"
+          }
+        },
+        {
+          "number": 5,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**(Medium, Select all that apply):** What are advantages of decision trees for text-based classification?",
+          "options": {
+            "A": "Easy to implement and interpret",
+            "B": "Captures nonlinearities",
+            "C": "Not sensitive to feature scaling",
+            "D": "Robbie will give you an A if you use them"
+          }
+        },
+        {
+          "number": 6,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**(Hard, Select all that apply):** What are common drawbacks of decision tree classifiers?",
+          "options": {
+            "A": "Highly prone to overfitting if not pruned",
+            "B": "Can be biased by unbalanced data",
+            "C": "Cannot handle categorical variables",
+            "D": "May require setting a minimum impurity threshold for leaves"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Section 3: Naive Bayes and Stochastic Gradient Descent",
+      "questions": [
+        {
+          "number": 7,
+          "difficulty": "Medium",
+          "type": "single_select",
+          "question": "What is the main assumption behind a Naive Bayes classifier?",
+          "options": {
+            "A": "The model is non-parametric",
+            "B": "All features are continuous",
+            "C": "Data is always balanced",
+            "D": "Features are conditionally independent given the class label"
+          }
+        },
+        {
+          "number": 8,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**(Hard, Select all that apply):** What are strengths of the Naive Bayes classifier for text classification?",
+          "options": {
+            "A": "Regularization for text data",
+            "B": "Simple to implement and interpret",
+            "C": "Computationally efficient and andles high-dimensional data well",
+            "D": "Handles multicollinearity"
+          }
+        },
+        {
+          "number": 9,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "What is a key limitation of the Naive Bayes classifier in practice?",
+          "options": {
+            "A": "The conditional independence assumption is often violated",
+            "B": "It cannot be used for spam detection",
+            "C": "It always requires regularization",
+            "D": "It is only suitable for regression tasks"
+          }
+        },
+        {
+          "number": 10,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**(Hard, Select all that apply):** Which statements about stochastic gradient descent (SGD) are correct?",
+          "options": {
+            "A": "It is an optimization process, not a classifier itself",
+            "B": "It is only used for neural networks",
+            "C": "It is very fast and can incorporate regularization",
+            "D": "It updates parameters using one random observation at a time"
+          }
+        }
+      ]
+    }
+  ]
+}

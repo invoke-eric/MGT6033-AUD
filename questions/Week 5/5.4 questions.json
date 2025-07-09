@@ -1,0 +1,142 @@
+{
+  "title": "Quiz Questions",
+  "sections": [
+    {
+      "title": "Section 1: Principles and Motivation for Dimensionality Reduction",
+      "questions": [
+        {
+          "number": 1,
+          "difficulty": "Easy",
+          "type": "single_select",
+          "question": "What is the primary goal of dimensionality reduction in the context of unstructured data?",
+          "options": {
+            "A": "To increase the number of columns in a dataset to make it more sparse",
+            "B": "To reduce the number of variables or columns while preserving important information",
+            "C": "To convert categorical data to one-hot encoded data",
+            "D": "To convert data from a big sparse matrix to a smaller dense matrix"
+          }
+        },
+        {
+          "number": 2,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "Which of the following are common methods for dimensionality reduction in NLP, as discussed in the lecture?",
+          "options": {
+            "A": "Embeddings",
+            "B": "Principal Component Analysis (PCA)",
+            "C": "t-SNE",
+            "D": "UMAP",
+            "E": "Bag-of-Words",
+            "F": "Topic models (LDA, NMF, LSA)"
+          }
+        },
+        {
+          "number": 3,
+          "difficulty": "Medium",
+          "type": "single_select",
+          "question": "Why might multiple dimensionality reduction techniques be used together in NLP workflows?",
+          "options": {
+            "A": "Each method is only valid for a specific language",
+            "B": "It speeds up processing time",
+            "C": "Combining methods can leverage their strengths for different tasks or stages",
+            "D": "It makes the dataset much smaller and easier to interprept"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Section 2: Principal Component Analysis (PCA)",
+      "questions": [
+        {
+          "number": 4,
+          "difficulty": "Medium",
+          "type": "single_select",
+          "question": "What is the main mathematical approach underlying PCA?",
+          "options": {
+            "A": "Singular value decomposition and eigenvectors of the covariance matrix",
+            "B": "Linear regression",
+            "C": "Decision trees",
+            "D": "K-means clustering"
+          }
+        },
+        {
+          "number": 5,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "What are advantages of PCA for dimensionality reduction?",
+          "options": {
+            "A": "Simple and fast to implement",
+            "B": "Produces orthogonal (uncorrelated) components",
+            "C": "Deterministic results",
+            "D": "Removes noise in data"
+          }
+        },
+        {
+          "number": 6,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "What are limitations or disadvantages of PCA?",
+          "options": {
+            "A": "Difficult to interpret individual components",
+            "B": "May lose important edge case variation",
+            "C": "Assumes linear relationships",
+            "D": "Sensitive to outliers and scale"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Section 3: Non-linear Dimensionality Reduction and Visualization",
+      "questions": [
+        {
+          "number": 7,
+          "difficulty": "Medium",
+          "type": "single_select",
+          "question": "What is the primary use of t-SNE in NLP and data science?",
+          "options": {
+            "A": "Preprocessing for clustering",
+            "B": "Visualization of high-dimensional data",
+            "C": "Feature selection",
+            "D": "Outlier detection"
+          }
+        },
+        {
+          "number": 8,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "What are limitations of t-SNE according to the lecture?",
+          "options": {
+            "A": "Not deterministic (can give different results on different runs)",
+            "B": "Computationally costly",
+            "C": "Not appropriate for most preprocessing",
+            "D": "Only works for labeled data"
+          }
+        },
+        {
+          "number": 9,
+          "difficulty": "Medium",
+          "type": "single_select",
+          "question": "What is a key advantage of UMAP over t-SNE for dimensionality reduction?",
+          "options": {
+            "A": "UMAP is more scalable and computationally efficient",
+            "B": "UMAP is more interpretable",
+            "C": "UMAP only works for images",
+            "D": "UMAP always produces the same results as PCA"
+          }
+        },
+        {
+          "number": 10,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "Why might UMAP not be suitable for use with distance-based clustering methods after dimensionality reduction?",
+          "options": {
+            "A": "UMAP does not preserve any structure in the data",
+            "B": "UMAP requires labeled data for all points",
+            "C": "UMAP always increases dimensionality",
+            "D": "UMAP’s non-linear transformation may distort distances, making clusters less meaningful"
+          }
+        }
+      ]
+    }
+  ]
+}

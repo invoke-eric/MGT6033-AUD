@@ -1,0 +1,140 @@
+{
+  "title": "Quiz Questions",
+  "sections": [
+    {
+      "title": "Section 1: Word Embeddings and Semantic Similarity",
+      "questions": [
+        {
+          "number": 1,
+          "difficulty": "Easy",
+          "type": "single_select",
+          "question": "What is the main purpose of word embeddings in NLP?",
+          "options": {
+            "A": "To count word frequencies",
+            "B": "To represent words as dense vectors capturing semantic meaning",
+            "C": "To encrypt text data",
+            "D": "To split text into sentences"
+          }
+        },
+        {
+          "number": 2,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Medium) ** Which of the following are advantages of word embeddings over traditional bag-of-words models?",
+          "options": {
+            "A": "Capture semantic relationships between words",
+            "B": "Reduce dimensionality",
+            "C": "Ignore word order completely",
+            "D": "Are sparse representations"
+          }
+        },
+        {
+          "number": 3,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "What is the distributional hypothesis underlying word embeddings?",
+          "options": {
+            "A": "Words that appear in similar contexts have similar meanings",
+            "B": "Words are randomly distributed in text",
+            "C": "Word frequency determines meaning",
+            "D": "Words with similar spellings have similar meanings"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Section 2: Training and Using Word Embeddings",
+      "questions": [
+        {
+          "number": 4,
+          "difficulty": "Medium",
+          "type": "single_select",
+          "question": "Which of the following are common architectures for training word embeddings? (Select all that apply)",
+          "options": {
+            "A": "Word2Vec Skip-gram",
+            "B": "Word2Vec CBOW",
+            "C": "TF-IDF",
+            "D": "Latent Dirichlet Allocation (LDA)"
+          }
+        },
+        {
+          "number": 5,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "In Word2Vec Skip-gram, what is the model trained to predict?",
+          "options": {
+            "A": "The target word given its context",
+            "B": "The context words given a target word",
+            "C": "The document topic",
+            "D": "The sentiment of a sentence"
+          }
+        },
+        {
+          "number": 6,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Medium) ** Which properties are typically captured by word embeddings?",
+          "options": {
+            "A": "Analogies (e.g., king - man + woman ≈ queen)",
+            "B": "Part-of-speech tags",
+            "C": "Synonyms and antonyms",
+            "D": "Sentence-level syntax"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Section 3: Applications and Limitations",
+      "questions": [
+        {
+          "number": 7,
+          "difficulty": "Easy",
+          "type": "single_select",
+          "question": "Which NLP task benefits least from static word embeddings?",
+          "options": {
+            "A": "Document classification",
+            "B": "Sentiment analysis",
+            "C": "Syntax-based grammar correction",
+            "D": "Named Entity Recognition (NER)"
+          }
+        },
+        {
+          "number": 8,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Hard) ** What are limitations of static word embeddings like Word2Vec?",
+          "options": {
+            "A": "Cannot handle out-of-vocabulary words",
+            "B": "Assign the same vector to a word in all contexts",
+            "C": "Require labeled training data",
+            "D": "Ignore subword information"
+          }
+        },
+        {
+          "number": 9,
+          "difficulty": "Medium",
+          "type": "single_select",
+          "question": "What is the primary use of cosine similarity in word embedding applications?",
+          "options": {
+            "A": "To measure syntactic correctness",
+            "B": "To quantify semantic similarity between word vectors",
+            "C": "To encrypt text",
+            "D": "To tokenize sentences"
+          }
+        },
+        {
+          "number": 10,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "Why might two words with similar meanings have vectors close together in embedding space?",
+          "options": {
+            "A": "They are spelled similarly",
+            "B": "They appear in similar contexts",
+            "C": "They have the same frequency",
+            "D": "They are both stop words"
+          }
+        }
+      ]
+    }
+  ]
+}

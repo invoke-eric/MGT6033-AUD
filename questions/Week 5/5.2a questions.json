@@ -1,0 +1,136 @@
+{
+  "title": "Quiz Questions",
+  "sections": [
+    {
+      "title": "Section 1: Topic Modeling Concepts and Workflow",
+      "questions": [
+        {
+          "number": 1,
+          "difficulty": "Easy",
+          "type": "single_select",
+          "question": "In the lecture example, what was the primary business benefit of topic modeling for the customer care manager?",
+          "options": {
+            "A": "It guarantees perfect classification of every document",
+            "B": "It helps identify key issues and assign responsibility efficiently",
+            "C": "It replaces all human analysts",
+            "D": "It eliminates the need for data preprocessing"
+          }
+        },
+        {
+          "number": 2,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Medium) ** Which of the following are limitations of using manual or keyword-based classification for large corpora?",
+          "options": {
+            "A": "It is time-consuming",
+            "B": "It can miss rare but important issues",
+            "C": "It is always more objective than modeling",
+            "D": "It may introduce subjectivity from different analysts"
+          }
+        },
+        {
+          "number": 3,
+          "difficulty": "Medium",
+          "type": "single_select",
+          "question": "What is the impact of poor preprocessing on topic model quality?",
+          "options": {
+            "A": "It has no effect",
+            "B": "It can reduce the interpretability and accuracy of topics",
+            "C": "It always increases coherence",
+            "D": "It always makes the document-term matrix more sparse and slower"
+          }
+        },
+        {
+          "number": 4,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**(Hard) ** Put the following steps to the topic modeling workflow in order as described in the lecture:",
+          "options": {
+            "A": "Feature extraction",
+            "B": "Communicating results",
+            "C": "Model tuning and evaluation",
+            "D": "Model selection",
+            "E": "Preprocessing"
+          }
+        },
+        {
+          "number": 5,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "Why might a manager prefer topic modeling over assigning a team to read and code every document?",
+          "options": {
+            "A": "Topic modeling is less subjective and can scale to large corpora",
+            "B": "Human reading has poor interpretation",
+            "C": "Topic modeling requires no interpretation",
+            "D": "Manual coding always produces more consistent results"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Section 2: Model Tuning, Evaluation, and Communication",
+      "questions": [
+        {
+          "number": 6,
+          "difficulty": "Medium",
+          "type": "single_select",
+          "question": "What is the role of hyperparameters in topic modeling?",
+          "options": {
+            "A": "They control aspects of model training and behavior",
+            "B": "They are only used for data cleaning",
+            "C": "They determine the number of documents",
+            "D": "They are irrelevant for model quality"
+          }
+        },
+        {
+          "number": 7,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Hard) ** Which metrics or approaches are used to evaluate the fit of a topic model?",
+          "options": {
+            "A": "Perplexity",
+            "B": "Coherence",
+            "C": "Word intrusion tasks",
+            "D": "F1 score"
+          }
+        },
+        {
+          "number": 8,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "What does a high coherence score indicate about a topic?",
+          "options": {
+            "A": "The topic contains words that frequently occur together and make sense as a group",
+            "B": "The topic contains words that are rarely together and are likely not related",
+            "C": "The topic contains only stop words",
+            "D": "The topic is not relevant to the corpus"
+          }
+        },
+        {
+          "number": 9,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "What is the purpose of a word intrusion task in topic modeling evaluation?",
+          "options": {
+            "A": "To test whether humans can identify an unrelated word in a topic list",
+            "B": "To test whether a model can identify an unrelated word in a topic list",
+            "C": "To count the number of topics",
+            "D": "To assign documents to clusters"
+          }
+        },
+        {
+          "number": 10,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Medium) ** According to the lecture, what are effective ways to communicate topic modeling results?",
+          "options": {
+            "A": "Visualizing topic prominence in the corpus",
+            "B": "Showing topic relevance for each document",
+            "C": "Printing all raw text in the corpus",
+            "D": "Analyzing topic similarities"
+          }
+        }
+      ]
+    }
+  ]
+}

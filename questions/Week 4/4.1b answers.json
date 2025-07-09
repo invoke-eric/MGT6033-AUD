@@ -1,0 +1,85 @@
+{
+  "title": "Answer Key",
+  "sections": [
+    {
+      "title": "Section 1: Regular Expression Operators and Match Patterns",
+      "questions": [
+        {
+          "number": 1,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answer:** B",
+          "options": {}
+        },
+        {
+          "number": 2,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answers:** A, B, C, D",
+          "options": {}
+        },
+        {
+          "number": 3,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answer:** B",
+          "options": {}
+        },
+        {
+          "number": 4,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answers:** A, B, C",
+          "options": {}
+        },
+        {
+          "number": 5,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answers:** B, C",
+          "options": {}
+        }
+      ]
+    },
+    {
+      "title": "Section 2: Building and Grouping Patterns",
+      "questions": [
+        {
+          "number": 6,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answer:** B",
+          "options": {}
+        },
+        {
+          "number": 7,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answers:** A, B, C",
+          "options": {}
+        },
+        {
+          "number": 8,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answer:** B",
+          "options": {}
+        },
+        {
+          "number": 9,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answers:** A, D",
+          "options": {}
+        },
+        {
+          "number": 10,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answer:** B",
+          "options": {}
+        }
+      ]
+    }
+  ]
+}

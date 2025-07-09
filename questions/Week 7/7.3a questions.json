@@ -1,0 +1,136 @@
+{
+  "title": "Quiz Questions",
+  "sections": [
+    {
+      "title": "Section 1: Transformer Architecture Fundamentals",
+      "questions": [
+        {
+          "number": 1,
+          "difficulty": "Easy",
+          "type": "single_select",
+          "question": "What is the primary learning objective for the lecture on transformers?",
+          "options": {
+            "A": "To design a transformer from scratch",
+            "B": "To discriminate between language transformers and previously employed neural networks",
+            "C": "To implement a transformer in Python",
+            "D": "To compare transformers to recurrent neural networks"
+          }
+        },
+        {
+          "number": 2,
+          "difficulty": "Medium, Select all that apply",
+          "type": "multiple_select",
+          "question": "Which of the following are key defining characteristics of transformer models?",
+          "options": {
+            "A": "Self-attention mechanism",
+            "B": "Positional encoding",
+            "C": "Sequential processing of tokens",
+            "D": "Contextual representations",
+            "E": "Encoder-decoder architecture"
+          }
+        },
+        {
+          "number": 3,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "How does the self-attention mechanism in transformers differ from processing in traditional neural networks?",
+          "options": {
+            "A": "It processes each token independently",
+            "B": "It allows the model to weigh the importance of different words regardless of their position in the sequence",
+            "C": "It requires sequential processing of words",
+            "D": "It cannot handle long-range dependencies"
+          }
+        },
+        {
+          "number": 4,
+          "difficulty": "Hard, Select all that apply",
+          "type": "multiple_select",
+          "question": "What advantages does the transformer architecture provide over traditional neural networks for NLP tasks?",
+          "options": {
+            "A": "It enables parallelization of processing",
+            "B": "It captures long-range dependencies between words",
+            "C": "It requires less training data",
+            "D": "It learns context without requiring sequential processing"
+          }
+        },
+        {
+          "number": 5,
+          "difficulty": "Medium",
+          "type": "single_select",
+          "question": "What is the role of positional encoding in transformer models?",
+          "options": {
+            "A": "It helps the model understand sequence order without requiring word-by-word processing",
+            "B": "It removes the need for attention mechanisms",
+            "C": "It ensures all words are processed sequentially",
+            "D": "It replaces the need for contextual representations"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Section 2: Encoder-Decoder Components",
+      "questions": [
+        {
+          "number": 6,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "What are the two vital components of transformer encoders?",
+          "options": {
+            "A": "Self-attention mechanism and feed-forward artificial neural network",
+            "B": "Masked self-attention and encoder-decoder attention",
+            "C": "Positional encoding and contextual embeddings",
+            "D": "Sequential processing and recursive feedback"
+          }
+        },
+        {
+          "number": 7,
+          "difficulty": "Hard, Select all that apply",
+          "type": "multiple_select",
+          "question": "Which statements about transformer decoders are correct?",
+          "options": {
+            "A": "They unpack contextualized embeddings back into natural language",
+            "B": "They include masked self-attention to limit visibility of future words",
+            "C": "They contain encoder-decoder attention mechanisms",
+            "D": "They process tokens sequentially like RNNs"
+          }
+        },
+        {
+          "number": 8,
+          "difficulty": "Medium",
+          "type": "single_select",
+          "question": "What is the purpose of masked self-attention in the decoder?",
+          "options": {
+            "A": "To hide certain words from the model completely",
+            "B": "To limit the model's ability to see words occurring after a given position in the sequence",
+            "C": "To focus only on the first and last words in a sequence",
+            "D": "To remove attention completely from certain tokens"
+          }
+        },
+        {
+          "number": 9,
+          "difficulty": "Hard, Select all that apply",
+          "type": "multiple_select",
+          "question": "How do encoders and decoders work together in a transformer architecture?",
+          "options": {
+            "A": "Encoders produce contextualized embeddings that capture input meaning",
+            "B": "Decoders generate output based on the encoder's representations",
+            "C": "Both can be stacked or chained together to improve performance",
+            "D": "They must always have an equal number of layers"
+          }
+        },
+        {
+          "number": 10,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "In the translation example provided in the lecture, what does the encoder-decoder attention mechanism help accomplish?",
+          "options": {
+            "A": "It ensures the output sentence has the same number of words as the input",
+            "B": "It allows the decoder to understand the structure of the original data",
+            "C": "It eliminates the need for positional encoding",
+            "D": "It processes each word independently"
+          }
+        }
+      ]
+    }
+  ]
+}

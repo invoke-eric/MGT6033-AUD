@@ -1,0 +1,135 @@
+{
+  "title": "Quiz Questions",
+  "sections": [
+    {
+      "title": "Section 1: Contextualized Word Embeddings",
+      "questions": [
+        {
+          "number": 1,
+          "difficulty": "Easy",
+          "type": "single_select",
+          "question": "What is a contextualized word embedding?",
+          "options": {
+            "A": "A fixed vector for each word in the vocabulary",
+            "B": "A word representation that varies depending on the surrounding words",
+            "C": "A one-hot encoded vector",
+            "D": "A random vector assigned to each word"
+          }
+        },
+        {
+          "number": 2,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Medium) ** Which of the following are advantages of contextualized embeddings compared to static embeddings?",
+          "options": {
+            "A": "They can represent multiple meanings of the same word",
+            "B": "They are sensitive to sentence context",
+            "C": "They assign the same vector to a word in all contexts",
+            "D": "They improve performance on tasks involving polysemy"
+          }
+        },
+        {
+          "number": 3,
+          "difficulty": "Medium",
+          "type": "single_select",
+          "question": "In which scenario would a static embedding fail but a contextualized embedding succeed?",
+          "options": {
+            "A": "When a word has only one meaning",
+            "B": "When a word has multiple meanings depending on context",
+            "C": "When all sentences are identical",
+            "D": "When the vocabulary is very small"
+          }
+        },
+        {
+          "number": 4,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Medium) ** Which models are commonly used to generate contextualized word embeddings?",
+          "options": {
+            "A": "Word2Vec",
+            "B": "ELMo",
+            "C": "BERT",
+            "D": "GloVe"
+          }
+        },
+        {
+          "number": 5,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "What property allows contextualized embeddings to outperform static embeddings in tasks like question answering?",
+          "options": {
+            "A": "They use more memory",
+            "B": "They encode the meaning of a word based on its context in the sentence",
+            "C": "They ignore word order",
+            "D": "They are always lower dimensional"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Section 2: Technical Details and Applications",
+      "questions": [
+        {
+          "number": 6,
+          "difficulty": "Medium",
+          "type": "single_select",
+          "question": "How does BERT generate a contextualized embedding for a word?",
+          "options": {
+            "A": "By averaging all word vectors in the vocabulary",
+            "B": "By using transformer layers to encode the entire sentence context",
+            "C": "By assigning a random vector to each word",
+            "D": "By using only the previous word as context"
+          }
+        },
+        {
+          "number": 7,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Hard) ** What are typical applications of contextualized word embeddings?",
+          "options": {
+            "A": "Named Entity Recognition (NER)",
+            "B": "Sentiment analysis",
+            "C": "Machine translation",
+            "D": "Image classification"
+          }
+        },
+        {
+          "number": 8,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "Why are contextualized embeddings more computationally expensive than static embeddings?",
+          "options": {
+            "A": "They require running a deep model for each new sentence",
+            "B": "They store more vectors per word",
+            "C": "They use sparse vectors",
+            "D": "They do not use neural networks"
+          }
+        },
+        {
+          "number": 9,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Hard) ** What challenges are associated with using contextualized embeddings in production systems?",
+          "options": {
+            "A": "Increased computational cost",
+            "B": "Need for GPU acceleration",
+            "C": "Larger model sizes",
+            "D": "Inability to handle polysemy"
+          }
+        },
+        {
+          "number": 10,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "How can contextualized embeddings be used to improve document similarity measures?",
+          "options": {
+            "A": "By averaging static word vectors",
+            "B": "By representing each word based on its sentence context, leading to more accurate similarity scores",
+            "C": "By ignoring all context",
+            "D": "By using only the first word in each document"
+          }
+        }
+      ]
+    }
+  ]
+}

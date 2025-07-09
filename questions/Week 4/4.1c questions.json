@@ -1,0 +1,145 @@
+{
+  "title": "Quiz Questions",
+  "sections": [
+    {
+      "title": "Section 1: Character Classes and Inversion",
+      "questions": [
+        {
+          "number": 1,
+          "difficulty": "Easy",
+          "type": "single_select",
+          "question": "What does the character class `\\s` match in regular expressions?",
+          "options": {
+            "A": "Any single digit",
+            "B": "Any whitespace character (space, newline, etc.)",
+            "C": "Any uppercase letter",
+            "D": "Any punctuation mark"
+          }
+        },
+        {
+          "number": 2,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**(Medium, Select all that apply):** Which of the following are valid ways to invert a character class in regex?",
+          "options": {
+            "A": "Use a capital letter, e.g., `\\S`",
+            "B": "Use a caret `^` inside square brackets, e.g., `[^aeiou]`",
+            "C": "Use a hyphen after the opening bracket, e.g., `[-aeiou]`",
+            "D": "Use a backslash before a lowercase letter, e.g., `\\b`"
+          }
+        },
+        {
+          "number": 3,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "What does the character class `\\w` include?",
+          "options": {
+            "A": "Only lowercase letters",
+            "B": "Letters, numbers, and underscores",
+            "C": "Only letters",
+            "D": "Only punctuation and spaces"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Section 2: Positional Characters, OR Operator, and Anchors",
+      "questions": [
+        {
+          "number": 4,
+          "difficulty": "Medium",
+          "type": "single_select",
+          "question": "What does the `^` symbol represent in a regular expression?",
+          "options": {
+            "A": "End of a string",
+            "B": "Start of a string",
+            "C": "Any digit",
+            "D": "Any non-digit"
+          }
+        },
+        {
+          "number": 5,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**(Medium, Select all that apply):** Which of the following are true about the OR operator (`|`) in regex?",
+          "options": {
+            "A": "It allows matching multiple alternatives",
+            "B": "It can be used inside and outside parentheses",
+            "C": "It always matches the longest possible string",
+            "D": "It is used to invert character classes"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Section 3: Greedy vs. Lazy Matching",
+      "questions": [
+        {
+          "number": 6,
+          "difficulty": "Medium",
+          "type": "single_select",
+          "question": "What is the main difference between greedy and lazy quantifiers in regex?",
+          "options": {
+            "A": "Greedy quantifiers match as little as possible; lazy quantifiers match as much as possible",
+            "B": "Greedy quantifiers match as much as possible; lazy quantifiers match as little as possible",
+            "C": "Both always match the same amount",
+            "D": "Lazy quantifiers only work with digits"
+          }
+        },
+        {
+          "number": 7,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**(Hard, Select all that apply):** Which quantifiers can be made lazy by adding a `?` after them?",
+          "options": {
+            "A": "*",
+            "B": "+",
+            "C": "{a,b}",
+            "D": "$"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Section 4: Look Arounds and Dynamic Group Referencing",
+      "questions": [
+        {
+          "number": 8,
+          "difficulty": "Hard, Select all that apply",
+          "type": "multiple_select",
+          "question": "What regex pattern would return \"cat\" in the phrase \"catfish catdog\"?",
+          "options": {
+            "A": "`cat(?=fish)`",
+            "B": "`(?<=cat)fish`",
+            "C": "`cat(?!fish)`",
+            "D": "`(?<!cat)fish`"
+          }
+        },
+        {
+          "number": 9,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**(Hard, Select all that apply):** In the regular expression `\\b(\\w+\\b)(\\b[\\w\\s,]+?\\b)(\\1)(.*?)[.?!]`, what is the purpose of `(\\1)`?",
+          "options": {
+            "A": "It matches the same text as the first capturing group",
+            "B": "It allows dynamic group referencing",
+            "C": "It inverts the match",
+            "D": "It matches any digit"
+          }
+        },
+        {
+          "number": 10,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "Why are dynamic group references useful in regular expressions?",
+          "options": {
+            "A": "They allow matching repeated words or patterns",
+            "B": "They always speed up regex processing",
+            "C": "They are required for all greedy matches",
+            "D": "They only work with digits"
+          }
+        }
+      ]
+    }
+  ]
+}

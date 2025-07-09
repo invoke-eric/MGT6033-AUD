@@ -1,0 +1,140 @@
+{
+  "title": "Quiz Questions",
+  "sections": [
+    {
+      "title": "Section 1: Design Considerations for Neural Networks in NLP",
+      "questions": [
+        {
+          "number": 1,
+          "difficulty": "Easy",
+          "type": "single_select",
+          "question": "What is a key challenge of traditional text representations like bag-of-words and TF-IDF for neural networks?",
+          "options": {
+            "A": "They lack context and sequential information",
+            "B": "They require labeled data",
+            "C": "They use too much memory",
+            "D": "They are only for images"
+          }
+        },
+        {
+          "number": 2,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Medium) ** Which modern text representation techniques are commonly used for neural networks in NLP?",
+          "options": {
+            "A": "Word embeddings (e.g., Word2Vec, GloVe)",
+            "B": "Transformer-based models (e.g., BERT, GPT)",
+            "C": "Bag-of-words",
+            "D": "TF-IDF"
+          }
+        },
+        {
+          "number": 3,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "Why is it important to consider casing (uppercase/lowercase) when preparing text for an ANN?",
+          "options": {
+            "A": "Cased words can capture semantic differences and improve performance with enough data",
+            "B": "Lowercasing always improves performance",
+            "C": "Casing is only relevant for numbers",
+            "D": "Casing is ignored by all neural networks"
+          }
+        },
+        {
+          "number": 4,
+          "difficulty": "Medium",
+          "type": "single_select",
+          "question": "Why might you break documents into shorter sequences for neural network input?",
+          "options": {
+            "A": "Many ANNs work better with shorter sequences",
+            "B": "It increases the number of features",
+            "C": "It reduces model accuracy",
+            "D": "It is required for all models"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Section 2: Computational and Training Considerations",
+      "questions": [
+        {
+          "number": 5,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Medium) ** What factors contribute to the computational complexity of training neural networks on text data?",
+          "options": {
+            "A": "Input data dimensionality",
+            "B": "Number of nodes and layers",
+            "C": "Model architecture (e.g., transformers vs. simple ANNs)",
+            "D": "The color of the computer"
+          }
+        },
+        {
+          "number": 6,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "What is the role of zero padding and truncation in sequence modeling for NLP?",
+          "options": {
+            "A": "To ensure all input sequences are the same length for the model",
+            "B": "To reduce model accuracy",
+            "C": "To remove stop words",
+            "D": "To convert numbers to text"
+          }
+        },
+        {
+          "number": 7,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Hard) ** Which strategies help mitigate overfitting in high-dimensional neural network models for NLP?",
+          "options": {
+            "A": "Dropout",
+            "B": "Weight decay",
+            "C": "Using smaller models",
+            "D": "Ignoring regularization"
+          }
+        },
+        {
+          "number": 8,
+          "difficulty": "Hard",
+          "type": "single_select",
+          "question": "Why are GPUs particularly useful for training complex neural networks on text data?",
+          "options": {
+            "A": "They allow parallel processing with hundreds of cores",
+            "B": "They have unlimited memory",
+            "C": "They require no programming",
+            "D": "They are only for graphics"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Section 3: Evaluation and Ethical Considerations",
+      "questions": [
+        {
+          "number": 9,
+          "difficulty": "Medium",
+          "type": "single_select",
+          "question": "Why is the choice of evaluation metric (e.g., accuracy, F1 score) important in neural network training?",
+          "options": {
+            "A": "The metric determines how model performance is monitored and optimized",
+            "B": "The metric changes the model architecture",
+            "C": "Metrics are only used for regression",
+            "D": "Metrics are not important for NLP"
+          }
+        },
+        {
+          "number": 10,
+          "difficulty": "Unknown",
+          "type": "multiple_select",
+          "question": "**(Hard) ** Which ethical considerations are important when designing and evaluating neural networks for NLP?",
+          "options": {
+            "A": "Model bias can be replicated from training data",
+            "B": "Sensitive terms can be masked during preprocessing",
+            "C": "Feature importance and synthetic data can be used to test for bias",
+            "D": "Model predictions should always be interpreted as deterministic"
+          }
+        }
+      ]
+    }
+  ]
+}

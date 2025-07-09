@@ -1,0 +1,90 @@
+{
+  "title": "Answer Key",
+  "sections": [
+    {
+      "title": "Section 1: K-means Clustering Concepts and Procedure",
+      "questions": [
+        {
+          "number": 1,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answer:** C",
+          "options": {}
+        },
+        {
+          "number": 2,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answer:** B",
+          "options": {}
+        },
+        {
+          "number": 3,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answers:** A, B, C",
+          "options": {}
+        },
+        {
+          "number": 4,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answer:** B",
+          "options": {}
+        },
+        {
+          "number": 5,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answer:** A",
+          "options": {}
+        }
+      ]
+    },
+    {
+      "title": "Section 2: Evaluating K-means and Clustering Metrics",
+      "questions": [
+        {
+          "number": 6,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answers:** A, B, C",
+          "options": {}
+        },
+        {
+          "number": 7,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answer:** D",
+          "options": {}
+        },
+        {
+          "number": 8,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answer:** B",
+          "options": {}
+        }
+      ]
+    },
+    {
+      "title": "Section 3: HDBSCAN Clustering Concepts and Comparison",
+      "questions": [
+        {
+          "number": 9,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answer:** A",
+          "options": {}
+        },
+        {
+          "number": 10,
+          "difficulty": "Unknown",
+          "type": "single_select",
+          "question": "**Correct Answers:** A, B, D",
+          "options": {}
+        }
+      ]
+    }
+  ]
+}
