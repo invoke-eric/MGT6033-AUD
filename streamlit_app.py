@@ -4,13 +4,30 @@ import re
 import logging
 logger = logging.getLogger(__name__)
 
-WEEK3_OPTIONS = ["3.1", "3.2", "3.3", "3.4", "3.5", "3A", "3B", "3C"]
+QUIZ_OPTIONS = [
+    "3.1", "3.2", "3.3", "3.4", "3.5", "3A", "3B", "3C",
+    "4.1a", "4.1b", "4.1c", "4.2a", "4.2b", "4.2c", "4.3", "4A", "4B", "4C",
+    "5.1", "5.2a", "5.2b", "5.3a", "5.3b", "5.4", "5A", "5B",
+    "6.1", "6.2", "6.3", "6.4", "6.5", 
+    "7.1a", "7.1b", "7.2", "7.3a", "7.3b"
+]
+
+DEMO_QUIZ_OPTIONS = [
+    "3A", "3B", "3C",
+    "4A", "4B", "4C",
+    "5A", "5B",
+    
+]
 
 def parse_questions(json_data):
     questions = []
     for section in json_data.get("sections", []):
         for q_data in section.get("questions", []):
             question_text = q_data.get("question")
+            # Remove the pattern **(any alphabetical string) ** from the question string
+            question_text = re.sub(r'\*\*\s*\((\s*[a-zA-Z]+\s*)\)\s*\*\*', '', question_text)
+            # Remove patterns like (text, text):
+            question_text = re.sub(r'\(([\w\s,]+)\):\s*', '', question_text)
             options_dict = q_data.get("options", {})
             options = [f"{key}. {value}" for key, value in options_dict.items()]
             questions.append({
@@ -35,8 +52,10 @@ def parse_answers(json_data):
     return answers
 
 def load_qa_files(selected_item):
-    base_path = "questions/Week 3/"
-    if selected_item in ["3A", "3B", "3C"]:
+    week_number = selected_item[0] # Extract the first character as the week number
+    base_path = f"questions/Week {week_number}/"
+
+    if selected_item in DEMO_QUIZ_OPTIONS:
         questions_file = f"{base_path}{selected_item} demo questions.json"
         answers_file = f"{base_path}{selected_item} demo answers.json"
     else:
@@ -58,13 +77,13 @@ def main():
     if 'quiz_submitted' not in st.session_state:
         st.session_state.quiz_submitted = False
     if 'selected_quiz' not in st.session_state:
-        st.session_state.selected_quiz = WEEK3_OPTIONS[0] # Default to the first option
+        st.session_state.selected_quiz = QUIZ_OPTIONS[0] # Default to the first option
 
     # Quiz selection
     selected_quiz_new = st.selectbox(
         "Select a quiz:",
-        WEEK3_OPTIONS,
-        index=WEEK3_OPTIONS.index(st.session_state.selected_quiz)
+        QUIZ_OPTIONS,
+        index=QUIZ_OPTIONS.index(st.session_state.selected_quiz)
     )
 
     if selected_quiz_new != st.session_state.selected_quiz:
